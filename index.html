@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1E6A85" />
+
+  <!-- ── SEO ───────────────────────────────── -->
+  <title>Alizé Fleurs — Fleuriste au Bouveret, bord du Léman</title>
+  <meta name="description" content="Fleuriste artisanal au Bouveret (Port-Valais). Bouquets, mariages, deuil, Chablais. Noté 5/5. Appelez le 024 481 39 02." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alize-fleurs.ch/" />
+
+  <!-- ── Open Graph ────────────────────────── -->
+  <meta property="og:title" content="Alizé Fleurs — Fleuriste au Bouveret, bord du Léman" />
+  <meta property="og:description" content="Fleuriste artisanal au Bouveret (Port-Valais). Bouquets, mariages, deuil, Chablais. Noté 5/5. Appelez le 024 481 39 02." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alize-fleurs.ch/" />
+  <meta property="og:image" content="https://thomaslc66.github.io/alize-fleurs-redesign/images/gmaps-01.jpg" />
+  <meta property="og:locale" content="fr_CH" />
+  <meta property="og:site_name" content="Alizé Fleurs" />
+
+  <!-- ── Schema.org Florist JSON-LD ─────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Alizé Fleurs",
+    "description": "Fleuriste artisanal au Bouveret, bord du lac Léman. Bouquets, mariages, deuil, plantes. Note parfaite 5/5.",
+    "image": "https://thomaslc66.github.io/alize-fleurs-redesign/images/gmaps-01.jpg",
+    "url": "https://alize-fleurs.ch/",
+    "telephone": "+41244813902",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rte Cantonale 25",
+      "addressLocality": "Le Bouveret",
+      "postalCode": "1897",
+      "addressRegion": "Valais",
+      "addressCountry": "CH"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "46.383",
+      "longitude": "6.865"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "12:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "14:00",
+        "closes": "18:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "12:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "11",
+      "reviewCount": "11"
+    },
+    "priceRange": "CHF",
+    "areaServed": ["Le Bouveret","Port-Valais","Vouvry","Saint-Gingolph","Chablais valaisan"]
+  }
+  </script>
+
+  <!-- ── Google Fonts ───────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Préchargement image hero (LCP) -->
+  <link rel="preload" as="image" href="https://thomaslc66.github.io/alize-fleurs-redesign/images/gmaps-01.jpg" />
+
+  <style>
+    /* =====================================================
+       DESIGN TOKENS — Alizé Fleurs
+       Le Bouveret · Bord du Léman · 2026-06-18
+    ===================================================== */
+    :root {
+      --color-primary:            #1E6A85;
+      --color-primary-dark:       #155570;
+      --color-primary-light:      #2A7B9E;
+      --color-primary-pale:       #D6EBF4;
+      --color-accent:             #4AB5C4;
+      --color-accent-dark:        #329BAA;
+      --color-accent-pale:        #B8E4EC;
+      --color-water-green:        #9DD4C4;
+      --color-water-green-pale:   #D4EEE9;
+      --color-sand:               #CAB07E;
+      --color-sand-light:         #EDE0CC;
+      --color-sand-pale:          #F5EDD9;
+      --color-night:              #1A3A4E;
+      --color-night-mid:          #1F4C63;
+      --color-surface:            #FFFFFF;
+      --color-surface-alt:        #F7F5F2;
+      --color-surface-blue:       #EDF5F9;
+      --color-background:         #F7F5F2;
+      --color-text-primary:       #12232E;
+      --color-text-secondary:     #2C4A5A;
+      --color-text-muted:         #4E6B7A;
+      --color-text-on-dark:       #FFFFFF;
+      --color-text-on-dark-muted: rgba(255,255,255,0.72);
+      --color-border:             #D4E4EC;
+      --color-border-light:       #EAF1F5;
+      --color-border-focus:       #1E6A85;
+      --color-error:              #C0392B;
+      --color-error-bg:           #FDECEA;
+      --color-success:            #1A7A45;
+      --color-success-bg:         #E8F8EE;
+      --color-warning:            #926200;
+      --color-warning-bg:         #FEF3C7;
+      --section-mariage-bg:       #1A3A4E;
+      --section-mariage-accent:   #4AB5C4;
+      --section-mariage-gold:     #CAB07E;
+      --footer-bg:                #1A3A4E;
+      --footer-link:              #4AB5C4;
+      --footer-border:            rgba(255,255,255,0.12);
+      --font-heading:  'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --font-body:     'Jost', system-ui, -apple-system, sans-serif;
+      --font-accent:   'Dancing Script', cursive;
+      --text-xs:   0.75rem;
+      --text-sm:   0.875rem;
+      --text-base: 1rem;
+      --text-lg:   1.125rem;
+      --text-xl:   1.25rem;
+      --text-2xl:  1.5rem;
+      --text-3xl:  1.875rem;
+      --text-4xl:  2.25rem;
+      --text-5xl:  3rem;
+      --text-6xl:  3.75rem;
+      --font-light:    300;
+      --font-regular:  400;
+      --font-medium:   500;
+      --font-semibold: 600;
+      --leading-tight:   1.25;
+      --leading-snug:    1.375;
+      --leading-normal:  1.5;
+      --leading-relaxed: 1.625;
+      --space-1:  0.25rem;
+      --space-2:  0.5rem;
+      --space-3:  0.75rem;
+      --space-4:  1rem;
+      --space-5:  1.25rem;
+      --space-6:  1.5rem;
+      --space-8:  2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      --radius-sm:   4px;
+      --radius-md:   8px;
+      --radius-lg:   12px;
+      --radius-xl:   16px;
+      --radius-2xl:  24px;
+      --radius-full: 9999px;
+      --shadow-sm:      0 1px 3px rgba(18,35,46,0.07);
+      --shadow-md:      0 4px 12px rgba(18,35,46,0.09);
+      --shadow-lg:      0 8px 24px rgba(18,35,46,0.11);
+      --shadow-xl:      0 16px 48px rgba(18,35,46,0.14);
+      --shadow-primary: 0 4px 20px rgba(30,106,133,0.28);
+      --shadow-card:    0 2px 16px rgba(18,35,46,0.08);
+      --duration-fast:   150ms;
+      --duration-normal: 250ms;
+      --duration-slow:   400ms;
+      --ease-default:    cubic-bezier(0.4,0,0.2,1);
+      --ease-out:        cubic-bezier(0,0,0.2,1);
+      --focus-ring:      0 0 0 3px rgba(30,106,133,0.25);
+      --nav-height:      72px;
+      --container-max:   1200px;
+    }
+
+    /* =====================================================
+       RESET
+    ===================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      font-weight: var(--font-regular);
+      font-size: var(--text-base);
+      line-height: var(--leading-relaxed);
+      color: var(--color-text-primary);
+      background-color: var(--color-background);
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 56px; /* mobile CTA bar clearance */
+    }
+    @media (min-width: 768px) { body { padding-bottom: 0; } }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul, ol { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+    input, textarea, select { font: inherit; }
+
+    /* =====================================================
+       SKIP LINK
+    ===================================================== */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: var(--space-4);
+      z-index: 9999;
+      background: var(--color-primary);
+      color: #fff;
+      padding: var(--space-3) var(--space-6);
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      font-weight: var(--font-medium);
+      transition: top var(--duration-fast);
+    }
+    .skip-link:focus { top: 0; }
+
+    /* =====================================================
+       CONTAINER
+    ===================================================== */
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-inline: auto;
+      padding-inline: var(--space-5);
+    }
+    @media (min-width: 768px)  { .container { padding-inline: var(--space-8); } }
+    @media (min-width: 1024px) { .container { padding-inline: var(--space-12); } }
+
+    /* =====================================================
+       TYPOGRAPHY BASE
+    ===================================================== */
+    h1, h2, h3 {
+      font-family: var(--font-heading);
+      font-weight: var(--font-regular);
+      line-height: var(--leading-tight);
+      letter-spacing: -0.01em;
+      color: var(--color-text-primary);
+    }
+    h1 { font-size: clamp(var(--text-3xl), 5vw, var(--text-6xl)); }
+    h2 { font-size: clamp(var(--text-2xl), 3.5vw, var(--text-4xl)); line-height: var(--leading-snug); }
+    h3 { font-size: clamp(var(--text-xl), 2vw, var(--text-2xl)); font-weight: var(--font-semibold); }
+    p  { color: var(--color-text-secondary); line-height: var(--leading-relaxed); }
+
+    .section-label {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: var(--font-medium);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 0.25rem;
+      margin-bottom: var(--space-4);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin-inline: auto;
+      margin-bottom: var(--space-14, 3.5rem);
+    }
+    .section-subtitle {
+      font-size: var(--text-lg);
+      color: var(--color-text-secondary);
+      margin-top: var(--space-4);
+      line-height: var(--leading-relaxed);
+    }
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: 0.75rem 1.75rem;
+      border-radius: var(--radius-lg);
+      font-family: var(--font-body);
+      font-weight: var(--font-medium);
+      font-size: var(--text-base);
+      letter-spacing: 0.01em;
+      transition:
+        background var(--duration-fast) var(--ease-out),
+        color var(--duration-fast) var(--ease-out),
+        border-color var(--duration-fast) var(--ease-out),
+        box-shadow var(--duration-normal) var(--ease-out),
+        transform var(--duration-fast) var(--ease-out);
+      white-space: nowrap;
+      min-height: 48px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+    }
+    .btn-primary:hover {
+      background: var(--color-primary-dark);
+      border-color: var(--color-primary-dark);
+      box-shadow: var(--shadow-primary);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+    .btn-secondary:hover { background: var(--color-primary); color: #fff; }
+    .btn-outline-white {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255,255,255,0.65);
+    }
+    .btn-outline-white:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.9);
+    }
+    .btn-white-solid {
+      background: #fff;
+      color: var(--color-night);
+      border-color: #fff;
+    }
+    .btn-white-solid:hover {
+      background: var(--color-surface-alt);
+      box-shadow: 0 4px 20px rgba(18,35,46,0.25);
+      transform: translateY(-1px);
+    }
+    .btn-sm  { padding: 0.5rem 1.25rem; font-size: var(--text-sm); min-height: 40px; }
+    .btn-lg  { padding: 0.875rem 2rem; font-size: var(--text-lg); min-height: 52px; }
+
+    /* =====================================================
+       HEADER & NAV
+    ===================================================== */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      height: var(--nav-height);
+      background: rgba(247,245,242,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition:
+        box-shadow var(--duration-normal) var(--ease-out),
+        background var(--duration-normal) var(--ease-out),
+        border-color var(--duration-normal) var(--ease-out);
+    }
+    .site-header.scrolled {
+      background: rgba(247,245,242,0.98);
+      box-shadow: 0 1px 12px rgba(18,35,46,0.08);
+      border-bottom-color: var(--color-border-light);
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--nav-height);
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .logo-inner {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .logo-icon { color: var(--color-primary); flex-shrink: 0; }
+    .logo-name {
+      font-family: var(--font-heading);
+      font-weight: var(--font-regular);
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+    .logo-tagline {
+      display: none;
+      font-family: var(--font-body);
+      font-size: 0.6875rem;
+      font-weight: var(--font-light);
+      color: var(--color-text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    @media (min-width: 768px) { .logo-tagline { display: block; } }
+
+    /* Desktop nav */
+    .main-nav { display: none; }
+    @media (min-width: 1024px) {
+      .main-nav { display: block; }
+      .main-nav ul { display: flex; align-items: center; gap: 0; }
+      .main-nav a {
+        font-family: var(--font-body);
+        font-size: var(--text-sm);
+        color: var(--color-text-secondary);
+        padding: var(--space-2) var(--space-3);
+        border-radius: var(--radius-md);
+        letter-spacing: 0.01em;
+        position: relative;
+        transition: color var(--duration-fast), background var(--duration-fast);
+      }
+      .main-nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: var(--space-3);
+        right: var(--space-3);
+        height: 2px;
+        background: var(--color-accent);
+        border-radius: var(--radius-full);
+        transform: scaleX(0);
+        transition: transform var(--duration-normal) var(--ease-out);
+      }
+      .main-nav a:hover, .main-nav a.active { color: var(--color-primary); }
+      .main-nav a.active::after { transform: scaleX(1); }
+      .main-nav a:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+    }
+
+    /* Header actions */
+    .header-actions { display: none; align-items: center; gap: var(--space-4); }
+    @media (min-width: 768px) { .header-actions { display: flex; } }
+    @media (max-width: 1023px) { .header-actions .btn-sm { display: none; } }
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-weight: var(--font-medium);
+      font-size: var(--text-sm);
+      color: var(--color-primary);
+      transition: color var(--duration-fast);
+    }
+    .header-phone:hover { color: var(--color-primary-dark); }
+    .header-phone:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-md); }
+
+    /* Hamburger */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      padding: var(--space-2);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: background var(--duration-fast);
+    }
+    .hamburger:hover { background: var(--color-surface-blue); }
+    .hamburger:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 1.5px;
+      background: var(--color-text-primary);
+      border-radius: var(--radius-full);
+      transition: transform var(--duration-normal) var(--ease-out), opacity var(--duration-normal) var(--ease-out);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    @media (min-width: 1024px) { .hamburger { display: none; } }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed;
+      top: var(--nav-height);
+      left: 0; right: 0; bottom: 0;
+      background: var(--color-surface-alt);
+      z-index: 999;
+      padding: var(--space-8) var(--space-6);
+      transform: translateX(100%);
+      transition: transform var(--duration-slow) var(--ease-out);
+      overflow-y: auto;
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .mobile-menu nav ul { display: flex; flex-direction: column; gap: var(--space-1); }
+    .mobile-menu nav a {
+      display: flex;
+      align-items: center;
+      padding: var(--space-4);
+      font-size: var(--text-2xl);
+      font-family: var(--font-heading);
+      color: var(--color-text-primary);
+      border-radius: var(--radius-lg);
+      transition: background var(--duration-fast), color var(--duration-fast);
+    }
+    .mobile-menu nav a:hover { background: var(--color-surface-blue); color: var(--color-primary); }
+    .mobile-menu-cta { margin-top: var(--space-8); display: flex; justify-content: center; }
+    body.menu-open { overflow: hidden; }
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: linear-gradient(160deg, #1A3A4E 0%, #1E6A85 55%, #2A7B9E 100%);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://thomaslc66.github.io/alize-fleurs-redesign/images/gmaps-01.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(18,35,46,0.50);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      padding: calc(var(--nav-height) + var(--space-16)) var(--space-5) var(--space-16);
+      margin-inline: auto;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.6);
+      box-shadow: 0 4px 16px rgba(18,35,46,0.15);
+      border-radius: var(--radius-full);
+      padding: 0.5rem 1.25rem;
+      font-size: var(--text-sm);
+      font-weight: var(--font-medium);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-8);
+    }
+    .hero-badge .stars { color: var(--color-sand); font-size: var(--text-base); }
+    .hero h1 {
+      color: #fff;
+      margin-bottom: var(--space-5);
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .hero-accroche {
+      font-family: var(--font-accent);
+      font-size: clamp(var(--text-lg), 2.5vw, var(--text-2xl));
+      color: rgba(255,255,255,0.92);
+      margin-bottom: var(--space-5);
+    }
+    .hero-desc {
+      font-size: clamp(var(--text-base), 1.5vw, var(--text-lg));
+      color: rgba(255,255,255,0.82);
+      max-width: 640px;
+      margin-inline: auto;
+      margin-bottom: var(--space-10);
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 479px) {
+      .hero-ctas { flex-direction: column; }
+      .hero-ctas .btn { width: 100%; justify-content: center; }
+    }
+
+    /* =====================================================
+       RÉASSURANCE
+    ===================================================== */
+    .reassurance {
+      background: var(--color-surface-blue);
+      border-top: 3px solid var(--color-accent);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-10) 0;
+    }
+    .reassurance-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8) var(--space-6);
+    }
+    @media (min-width: 768px) {
+      .reassurance-grid { grid-template-columns: repeat(4, 1fr); gap: var(--space-6); }
+    }
+    .reassurance-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--space-3);
+    }
+    .reassurance-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-lg);
+      background: rgba(30,106,133,0.10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+    .reassurance-title {
+      font-family: var(--font-heading);
+      font-size: var(--text-lg);
+      font-weight: var(--font-semibold);
+      color: var(--color-text-primary);
+    }
+    .reassurance-text { font-size: var(--text-sm); color: var(--color-text-muted); }
+
+    /* =====================================================
+       À PROPOS
+    ===================================================== */
+    .about {
+      background: var(--color-surface-alt);
+      padding: var(--space-20) 0;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+    @media (min-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr 1fr; gap: var(--space-20); }
+    }
+    .about-tagline {
+      font-family: var(--font-accent);
+      font-size: var(--text-xl);
+      color: var(--color-primary);
+      margin-bottom: var(--space-6);
+    }
+    .about-content p { margin-bottom: var(--space-5); }
+    .about-pull-quote {
+      border-left: 3px solid var(--color-accent);
+      padding-left: var(--space-5);
+      margin: var(--space-8) 0;
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
+      font-style: italic;
+      color: var(--color-primary);
+      line-height: var(--leading-snug);
+    }
+    .about-image-wrap {
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+    }
+    .about-image-wrap img {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/5;
+    }
+    @media (min-width: 1024px) {
+      .about-image-wrap img { aspect-ratio: 3/4; min-height: 520px; }
+    }
+
+    /* =====================================================
+       PRESTATIONS
+    ===================================================== */
+    .services {
+      background: var(--color-surface);
+      padding: var(--space-20) 0;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+    @media (min-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+    }
+    .service-card {
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8) var(--space-6);
+      display: flex;
+      flex-direction: column;
+      transition:
+        box-shadow var(--duration-normal) var(--ease-default),
+        border-color var(--duration-normal) var(--ease-default),
+        background-color var(--duration-normal) var(--ease-default),
+        transform var(--duration-normal) var(--ease-default);
+    }
+    .service-card:hover {
+      background: var(--color-surface-blue);
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-lg);
+      background: var(--color-surface-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      margin-bottom: var(--space-5);
+      flex-shrink: 0;
+    }
+    .service-card h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-3);
+      line-height: var(--leading-snug);
+    }
+    .service-card > p {
+      font-size: 0.9375rem;
+      margin-bottom: var(--space-5);
+      flex: 1;
+    }
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      font-weight: var(--font-medium);
+      color: var(--color-primary);
+      transition: gap var(--duration-fast), color var(--duration-fast);
+    }
+    .service-link:hover { color: var(--color-primary-dark); gap: var(--space-3); }
+    .service-link:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-md); }
+    .services-cta { text-align: center; margin-top: var(--space-12); }
+
+    /* =====================================================
+       MARIAGE
+    ===================================================== */
+    .mariage {
+      background: var(--section-mariage-bg);
+      padding: var(--space-20) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .mariage-deco {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      opacity: 0.05;
+      pointer-events: none;
+    }
+    .mariage .section-label {
+      color: var(--section-mariage-accent);
+      border-bottom-color: var(--section-mariage-accent);
+    }
+    .mariage h2 { color: #fff; }
+    .mariage-intro {
+      font-size: var(--text-lg);
+      color: rgba(255,255,255,0.85);
+      margin-top: var(--space-4);
+    }
+    .mariage-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+    @media (min-width: 1024px) {
+      .mariage-grid { grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center; }
+    }
+    .mariage-text p { color: rgba(255,255,255,0.85); margin-bottom: var(--space-5); }
+    .mariage-list {
+      margin: var(--space-5) 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .mariage-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      color: rgba(255,255,255,0.82);
+      font-size: 0.9375rem;
+    }
+    .mariage-list li::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--section-mariage-accent);
+      flex-shrink: 0;
+      margin-top: 0.5em;
+    }
+    .mariage-ctas { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-8); }
+    .mariage-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3);
+    }
+    .mariage-images figure {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .mariage-images img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-out);
+    }
+    .mariage-images figure:hover img { transform: scale(1.04); }
+
+    /* =====================================================
+       DEUIL
+    ===================================================== */
+    .deuil {
+      background: var(--color-surface-alt);
+      padding: var(--space-20) 0;
+    }
+    .deuil-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+    @media (min-width: 1024px) {
+      .deuil-grid { grid-template-columns: 1fr 1fr; gap: var(--space-16); }
+    }
+    .deuil-content .section-label {
+      color: var(--color-text-muted);
+      border-bottom-color: var(--color-border);
+    }
+    .deuil-content h2 { margin-bottom: var(--space-5); }
+    .deuil-content p {
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      margin-bottom: var(--space-5);
+    }
+    .deuil-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+    .deuil-images figure { border-radius: var(--radius-lg); overflow: hidden; }
+    .deuil-images img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+
+    /* =====================================================
+       GALERIE
+    ===================================================== */
+    .gallery { background: var(--color-surface); padding: var(--space-20) 0; }
+    .gallery-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      justify-content: center;
+      margin-bottom: var(--space-8);
+    }
+    .gallery-filter-btn {
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--radius-full);
+      border: 1.5px solid var(--color-border);
+      background: var(--color-surface-alt);
+      color: var(--color-text-secondary);
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: var(--font-medium);
+      cursor: pointer;
+      transition: all var(--duration-fast) var(--ease-out);
+      min-height: 40px;
+    }
+    .gallery-filter-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .gallery-filter-btn.active { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+    .gallery-filter-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-2);
+    }
+    @media (min-width: 640px)  { .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: var(--space-3); } }
+    @media (min-width: 1024px) { .gallery-grid { grid-template-columns: repeat(4, 1fr); } }
+    .gallery-item { border-radius: var(--radius-md); overflow: hidden; }
+    .gallery-item img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-out);
+      display: block;
+    }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-cta { text-align: center; margin-top: var(--space-12); }
+
+    /* =====================================================
+       TÉMOIGNAGES
+    ===================================================== */
+    .testimonials { background: var(--color-surface-blue); padding: var(--space-20) 0; }
+    .testimonials-badge-wrap { text-align: center; margin-bottom: var(--space-12); }
+    .badge-stars-large {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-3);
+      background: var(--color-primary);
+      color: #fff;
+      border-radius: var(--radius-2xl);
+      padding: var(--space-8) var(--space-12);
+      box-shadow: var(--shadow-primary);
+    }
+    .badge-stars-large .stars { font-size: var(--text-3xl); color: var(--color-sand); letter-spacing: 0.1em; }
+    .badge-stars-large .score { font-family: var(--font-heading); font-size: var(--text-4xl); line-height: 1; }
+    .badge-stars-large .label { font-size: var(--text-sm); color: rgba(255,255,255,0.85); letter-spacing: 0.05em; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+    @media (min-width: 768px) { .testimonials-grid { grid-template-columns: repeat(3, 1fr); } }
+    .testimonial-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      border-radius: var(--radius-xl);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-card);
+    }
+    .testimonial-quote {
+      font-family: Georgia, serif;
+      font-size: 4.5rem;
+      line-height: 0.5;
+      color: var(--color-border);
+      margin-bottom: var(--space-4);
+      display: block;
+      user-select: none;
+    }
+    .testimonial-stars { color: var(--color-sand); margin-bottom: var(--space-4); letter-spacing: 0.05em; }
+    .testimonial-text {
+      font-size: 0.9375rem;
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+      font-style: italic;
+      margin-bottom: var(--space-6);
+    }
+    .testimonial-author { font-weight: var(--font-medium); color: var(--color-text-primary); font-size: var(--text-sm); }
+    .testimonial-location { font-size: var(--text-xs); color: var(--color-text-muted); margin-top: 2px; }
+    .testimonials-cta { text-align: center; margin-top: var(--space-10); }
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+    .contact { background: var(--color-surface-alt); padding: var(--space-20) 0; }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+    @media (min-width: 1024px) {
+      .contact-layout { grid-template-columns: 1fr 1.4fr; gap: var(--space-16); align-items: start; }
+    }
+    .contact-info-block h3 { font-size: var(--text-2xl); margin-bottom: var(--space-8); }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: var(--color-surface-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+    .info-label {
+      font-size: var(--text-xs);
+      font-weight: var(--font-medium);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+      margin-bottom: 3px;
+    }
+    .info-value { font-size: var(--text-base); color: var(--color-text-primary); line-height: var(--leading-normal); }
+    .info-value a { color: var(--color-primary); font-weight: var(--font-medium); transition: color var(--duration-fast); }
+    .info-value a:hover { color: var(--color-primary-dark); }
+    .hours-table { display: grid; grid-template-columns: auto 1fr; gap: 3px var(--space-4); font-size: var(--text-sm); }
+    .hours-table .d { color: var(--color-text-muted); font-weight: var(--font-medium); }
+    .hours-table .t { color: var(--color-text-secondary); }
+    .confirm-note-inline {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      color: var(--color-warning);
+      background: var(--color-warning-bg);
+      border-radius: var(--radius-md);
+      padding: var(--space-2) var(--space-3);
+      margin-top: var(--space-3);
+    }
+
+    /* Form */
+    .contact-form-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      padding: var(--space-10);
+      box-shadow: 0 4px 24px rgba(18,35,46,0.08);
+      border: 1px solid var(--color-border);
+    }
+    .contact-form-card h3 { font-size: var(--text-2xl); margin-bottom: var(--space-6); }
+    .form-stack { display: flex; flex-direction: column; gap: var(--space-5); }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-5);
+    }
+    @media (min-width: 540px) { .form-row { grid-template-columns: 1fr 1fr; } }
+    .form-field { display: flex; flex-direction: column; gap: var(--space-2); }
+    .form-label {
+      font-size: var(--text-sm);
+      font-weight: var(--font-medium);
+      color: var(--color-text-secondary);
+    }
+    .form-label .req { color: var(--color-error); margin-left: 2px; }
+    .f-input, .f-select, .f-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background: var(--color-surface);
+      color: var(--color-text-primary);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+      -webkit-appearance: none;
+    }
+    .f-input::placeholder, .f-textarea::placeholder { color: var(--color-text-muted); }
+    .f-input:hover, .f-select:hover, .f-textarea:hover { border-color: var(--color-water-green); }
+    .f-input:focus, .f-select:focus, .f-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(30,106,133,0.15);
+    }
+    .f-select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%234E6B7A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 20px;
+      padding-right: 2.5rem;
+    }
+    .f-textarea { min-height: 130px; resize: vertical; }
+    .form-submit {
+      width: 100%;
+      padding: 1rem 2rem;
+      font-size: var(--text-lg);
+      margin-top: var(--space-2);
+      justify-content: center;
+    }
+    .form-success {
+      display: none;
+      background: var(--color-success-bg);
+      border: 1.5px solid var(--color-success);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+      text-align: center;
+    }
+    .form-success .check-icon { color: var(--color-success); margin: 0 auto var(--space-4); }
+    .form-success p { color: var(--color-success); font-weight: var(--font-medium); font-size: var(--text-lg); }
+    .form-success .sub { color: var(--color-text-secondary); font-size: var(--text-base); font-weight: var(--font-regular); margin-top: var(--space-2); }
+    .form-success .sub a { color: var(--color-primary); }
+
+    /* Map */
+    .contact-map {
+      margin-top: var(--space-12);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+    }
+    .contact-map iframe { width: 100%; height: 360px; border: 0; display: block; }
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+    .faq { background: var(--color-surface); padding: var(--space-20) 0; }
+    .faq-list { max-width: 768px; margin-inline: auto; }
+    .faq-item { border-bottom: 1px solid var(--color-border-light); }
+    .faq-item:first-child { border-top: 1px solid var(--color-border-light); }
+    .faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-4);
+      padding: var(--space-6) 0;
+      font-size: var(--text-base);
+      font-weight: var(--font-medium);
+      color: var(--color-text-primary);
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      min-height: 48px;
+      transition: color var(--duration-fast);
+    }
+    .faq-question:hover { color: var(--color-primary); }
+    .faq-question:focus-visible { outline: none; color: var(--color-primary); }
+    .faq-chevron {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      color: var(--color-primary);
+      transition: transform var(--duration-normal) var(--ease-out);
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-answer { overflow: hidden; max-height: 0; transition: max-height var(--duration-slow) var(--ease-out); }
+    .faq-item.open .faq-answer { max-height: 600px; }
+    .faq-answer-inner {
+      padding-bottom: var(--space-6);
+      color: var(--color-text-secondary);
+      font-size: 0.9375rem;
+      line-height: var(--leading-relaxed);
+    }
+    .faq-answer-inner p { margin-bottom: var(--space-3); }
+    .faq-answer-inner a { color: var(--color-primary); }
+    .faq-note { font-size: var(--text-sm); color: var(--color-warning); font-style: italic; margin-top: var(--space-2); }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+    .site-footer {
+      background: var(--footer-bg);
+      color: #fff;
+      padding: var(--space-16) 0 var(--space-8);
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-10);
+      padding-bottom: var(--space-12);
+      border-bottom: 1px solid var(--footer-border);
+      margin-bottom: var(--space-8);
+    }
+    @media (min-width: 768px) {
+      .footer-top { grid-template-columns: 1.4fr 1fr 1fr; gap: var(--space-12); }
+    }
+    .footer-logo-name {
+      font-family: var(--font-heading);
+      font-size: var(--text-2xl);
+      color: #fff;
+      display: block;
+      margin-bottom: var(--space-3);
+    }
+    .footer-tagline {
+      font-size: var(--text-sm);
+      color: var(--color-text-on-dark-muted);
+      line-height: var(--leading-relaxed);
+    }
+    .footer-tagline .stars { color: var(--color-sand); }
+    .footer-col-title {
+      display: block;
+      font-size: var(--text-xs);
+      font-weight: var(--font-medium);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--footer-link);
+      margin-bottom: var(--space-5);
+    }
+    .footer-nav ul { display: flex; flex-direction: column; gap: var(--space-2); }
+    .footer-nav a {
+      font-size: var(--text-sm);
+      color: var(--color-text-on-dark-muted);
+      transition: color var(--duration-fast);
+    }
+    .footer-nav a:hover { color: var(--footer-link); }
+    .footer-nav a:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(255,255,255,0.4); border-radius: 2px; }
+    .footer-contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+      font-size: var(--text-sm);
+      color: var(--color-text-on-dark-muted);
+    }
+    .footer-contact-row svg { flex-shrink: 0; color: var(--footer-link); margin-top: 2px; }
+    .footer-contact-row a { color: var(--footer-link); }
+    .footer-contact-row a:hover { color: var(--color-water-green); }
+    .footer-hours { font-size: var(--text-sm); color: var(--color-text-on-dark-muted); margin-top: var(--space-5); }
+    .footer-hours .row { display: grid; grid-template-columns: auto 1fr; gap: 3px var(--space-3); margin-bottom: 2px; }
+    .footer-hours .day { color: rgba(255,255,255,0.45); font-size: 0.8125rem; }
+    .footer-hours .confirm { font-size: var(--text-xs); color: rgba(255,255,255,0.35); font-style: italic; margin-top: var(--space-3); }
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      align-items: center;
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .footer-bottom { flex-direction: row; justify-content: space-between; text-align: left; }
+    }
+    .footer-copyright { font-size: var(--text-xs); color: var(--color-text-on-dark-muted); }
+    .footer-legal a { font-size: var(--text-xs); color: rgba(255,255,255,0.4); text-decoration: underline; }
+    .footer-legal a:hover { color: var(--footer-link); }
+    .footer-pexels {
+      text-align: center;
+      font-size: var(--text-xs);
+      color: rgba(255,255,255,0.28);
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-pexels a { color: rgba(255,255,255,0.38); }
+    .footer-pexels a:hover { color: var(--footer-link); }
+
+    /* =====================================================
+       MOBILE CTA BAR
+    ===================================================== */
+    .mobile-cta-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 500;
+      height: 56px;
+      background: var(--color-primary);
+      box-shadow: 0 -2px 12px rgba(18,35,46,0.15);
+    }
+    .mobile-cta-bar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      font-weight: var(--font-medium);
+      font-size: var(--text-base);
+      letter-spacing: 0.01em;
+      transition: background var(--duration-fast);
+    }
+    .mobile-cta-bar a:hover, .mobile-cta-bar a:focus { background: var(--color-primary-dark); }
+    .mobile-cta-bar a:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
+    @media (min-width: 768px) { .mobile-cta-bar { display: none; } }
+
+    /* =====================================================
+       ANIMATIONS — SCROLL REVEAL
+    ===================================================== */
+    .animate {
+      opacity: 0;
+      transform: translateY(20px);
+      transition:
+        opacity var(--duration-slow) var(--ease-out),
+        transform var(--duration-slow) var(--ease-out);
+    }
+    .animate.visible { opacity: 1; transform: translateY(0); }
+    .animate-delay-1 { transition-delay: 100ms; }
+    .animate-delay-2 { transition-delay: 200ms; }
+    .animate-delay-3 { transition-delay: 300ms; }
+    .animate-delay-4 { transition-delay: 400ms; }
+
+    /* =====================================================
+       ACCESSIBILITY
+    ===================================================== */
+    :focus-visible { outline: 2px solid var(--color-border-focus); outline-offset: 3px; }
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border-width: 0;
+    }
+
+    /* =====================================================
+       REDUCED MOTION
+    ===================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .animate { opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Skip link accessibilité -->
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ===================================================
+       HEADER
+  =================================================== -->
+  <header role="banner" class="site-header" id="site-header">
+    <div class="container nav-container">
+
+      <!-- Logo typographique — aucun fichier logo disponible -->
+      <a href="#accueil" class="logo" aria-label="Alizé Fleurs — Retour à l'accueil">
+        <div class="logo-inner">
+          <svg class="logo-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="13" cy="10" r="2.2" stroke="#1E6A85" stroke-width="1.4"/>
+            <ellipse cx="13" cy="4.5" rx="1.6" ry="2.8" stroke="#1E6A85" stroke-width="1.4" stroke-linecap="round"/>
+            <ellipse cx="13" cy="15.5" rx="1.6" ry="2.8" stroke="#1E6A85" stroke-width="1.4" stroke-linecap="round"/>
+            <ellipse cx="7.5" cy="10" rx="2.8" ry="1.6" stroke="#1E6A85" stroke-width="1.4" stroke-linecap="round"/>
+            <ellipse cx="18.5" cy="10" rx="2.8" ry="1.6" stroke="#1E6A85" stroke-width="1.4" stroke-linecap="round"/>
+            <line x1="13" y1="18.3" x2="13" y2="22.5" stroke="#1E6A85" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M10.5 21 Q13 23 15.5 21" stroke="#4AB5C4" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-name">Alizé Fleurs</span>
+        </div>
+        <span class="logo-tagline">Fleuriste artisanal · Le Bouveret · Bord du Léman</span>
+      </a>
+
+      <!-- Navigation principale (desktop) -->
+      <nav role="navigation" aria-label="Navigation principale" class="main-nav">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#mariage">Mariage</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions header (desktop) -->
+      <div class="header-actions">
+        <a href="tel:0244813902" class="header-phone" aria-label="Appeler Alizé Fleurs au 024 481 39 02">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          024 481 39 02
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">Demander un devis</a>
+      </div>
+
+      <!-- Hamburger mobile -->
+      <button class="hamburger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav role="navigation" aria-label="Menu mobile">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#mariage">Mariage</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-cta">
+          <a href="tel:0244813902" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            Appeler — 024 481 39 02
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       MAIN
+  =================================================== -->
+  <main id="main">
+
+    <!-- ================================================
+         SECTION 1 — HERO
+    ================================================ -->
+    <section id="accueil" aria-labelledby="hero-h1">
+      <!-- NOTE: Remplacer l'image Pexels ci-dessous par une vraie photo d'Alizé Fleurs avant mise en ligne -->
+      <div class="hero">
+        <div class="hero-bg" role="img" aria-label="Fleuriste au travail dans sa boutique — Alizé Fleurs, Le Bouveret, bord du Léman"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-badge" role="img" aria-label="Note parfaite 5 étoiles sur 5 — 11 avis Google">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><strong>5&nbsp;/ 5</strong> — Note parfaite · 11 avis Google</span>
+          </div>
+          <h1 id="hero-h1">Votre fleuriste artisanal au bord du lac Léman</h1>
+          <p class="hero-accroche">Des fleurs fraîches, portées par la brise — au Bouveret, entre les eaux et les Alpes.</p>
+          <p class="hero-desc">Bouquets du quotidien, mariages lacustres d'exception, hommages sincères&nbsp;: Alizé Fleurs compose pour vous des arrangements floraux uniques, avec la légèreté de l'alizé et le soin de l'artisan.</p>
+          <div class="hero-ctas">
+            <a href="tel:0244813902" class="btn btn-primary btn-lg" aria-label="Appeler Alizé Fleurs au 024 481 39 02">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              Nous appeler — 024 481 39 02
+            </a>
+            <a href="#galerie" class="btn btn-outline-white btn-lg">
+              Voir nos créations
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 2 — RÉASSURANCE
+    ================================================ -->
+    <section aria-label="Nos engagements" class="reassurance">
+      <div class="container">
+        <div class="reassurance-grid">
+          <div class="reassurance-item animate">
+            <div class="reassurance-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="reassurance-title">5/5 — Note parfaite</p>
+            <p class="reassurance-text">11 avis Google · La confiance sans nuance</p>
+          </div>
+          <div class="reassurance-item animate animate-delay-1">
+            <div class="reassurance-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3"/><path d="M12 12v9"/><path d="M9 5.5C7.5 3.5 5 4 5 4s.5 2.5 2.5 4.5"/><path d="M15 5.5C16.5 3.5 19 4 19 4s-.5 2.5-2.5 4.5"/><path d="M7 9.5C5 9 4 7 4 7s2 .5 3.5 2"/><path d="M17 9.5C19 9 20 7 20 7s-2 .5-3.5 2"/></svg>
+            </div>
+            <p class="reassurance-title">Créations sur mesure</p>
+            <p class="reassurance-text">Chaque bouquet composé à la main, pour vous</p>
+          </div>
+          <div class="reassurance-item animate animate-delay-2">
+            <div class="reassurance-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17c2.67-1.5 5.33-1.5 8 0s5.33 1.5 8 0"/><path d="M2 12c2.67-1.5 5.33-1.5 8 0s5.33 1.5 8 0"/><path d="M12 2v10"/><circle cx="12" cy="5" r="2"/></svg>
+            </div>
+            <p class="reassurance-title">Bord du lac Léman</p>
+            <p class="reassurance-text">Le Bouveret, Port-Valais — au cœur du Chablais</p>
+          </div>
+          <div class="reassurance-item animate animate-delay-3">
+            <div class="reassurance-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.686 2 6 4.686 6 8c0 5 6 12 6 12s6-7 6-12c0-3.314-2.686-6-6-6z"/><circle cx="12" cy="8" r="2"/></svg>
+            </div>
+            <p class="reassurance-title">Artisan local</p>
+            <p class="reassurance-text">Une boutique de village, un savoir-faire humain</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 3 — À PROPOS
+    ================================================ -->
+    <section id="apropos" class="about" aria-labelledby="about-h2">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content animate">
+            <span class="section-label">Notre histoire</span>
+            <h2 id="about-h2">Le souffle d'une fleuristerie pas comme les autres</h2>
+            <p class="about-tagline">Alizé — le vent doux qui porte les fragrances loin sur le lac.</p>
+            <p>L'alizé, c'est ce vent régulier et doux qui naît au large, qui traverse les étendues d'eau, qui arrive chargé de sel, de lumière et de fraîcheur. Au Bouveret, au bord du Léman, entre l'embouchure du Rhône et les rives vaudoises, on connaît bien cette brise — celle qui fait frissonner les joncs, claquer doucement les voiles, et qui donne à l'air un parfum d'été et d'horizon.</p>
+            <blockquote class="about-pull-quote">
+              Chaque composition est pensée à la main, avec des fleurs de saison, pour un anniversaire, un mariage au bord du lac, un moment de recueillement ou simplement le plaisir d'offrir quelque chose de beau.
+            </blockquote>
+            <p>C'est dans cet esprit qu'Alizé Fleurs compose ses bouquets&nbsp;: avec légèreté, avec fraîcheur, avec le soin de choisir des fleurs qui parlent à ceux qui les reçoivent. Nos clients nous accordent leur confiance avec générosité — <strong>5/5 sur chaque avis Google</strong>. C'est ce qui nous touche le plus et ce qui nourrit notre exigence au quotidien.</p>
+            <a href="#prestations" class="btn btn-primary" style="margin-top: 1.5rem;">
+              Découvrir nos prestations
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <!-- NOTE: Remplacer cette image Pexels par une photo de la fleuriste ou de la boutique Alizé Fleurs -->
+          <figure class="about-image-wrap animate animate-delay-2">
+            <img
+              src="images/gmaps-02.png"
+              alt="Intérieur de la boutique Alizé Fleurs — étagères de bouquets, orchidées et créations, Le Bouveret"
+              width="940" height="650"
+              loading="lazy"
+            />
+            <figcaption class="sr-only">Photo issue de la page Google Maps de l'établissement. À remplacer par une vraie photo de la boutique.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 4 — PRESTATIONS
+    ================================================ -->
+    <section id="prestations" class="services" aria-labelledby="services-h2">
+      <div class="container">
+        <header class="section-header animate">
+          <span class="section-label">Nos prestations</span>
+          <h2 id="services-h2">Des fleurs pour chaque moment de votre vie</h2>
+          <p class="section-subtitle">Du bouquet du quotidien à la décoration d'un mariage au bord du Léman — nous sommes à votre service, à deux pas de la route cantonale.</p>
+        </header>
+        <div class="services-grid">
+
+          <!-- Bouquets -->
+          <article class="service-card animate">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="2.5"/><ellipse cx="12" cy="3.5" rx="1.5" ry="2.5"/><ellipse cx="12" cy="14.5" rx="1.5" ry="2.5"/><ellipse cx="6.5" cy="9" rx="2.5" ry="1.5"/><ellipse cx="17.5" cy="9" rx="2.5" ry="1.5"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M10 19.5 Q12 21.5 14 19.5"/></svg>
+            </div>
+            <h3>Bouquets artisanaux & compositions florales</h3>
+            <p>Des bouquets créés à la main pour toutes les occasions — anniversaire, naissance, fête, remerciement — avec des fleurs fraîches de saison, composés avec soin et légèreté.</p>
+            <a href="tel:0244813902" class="service-link" aria-label="Appeler pour commander un bouquet au 024 481 39 02">
+              Commander un bouquet
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Mariage -->
+          <article class="service-card animate animate-delay-1">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/><path d="M6 8.5 Q9 5 12 8.5 Q15 5 18 8.5"/></svg>
+            </div>
+            <h3>Fleurs de mariage — du bouquet à la décoration complète</h3>
+            <p>Un accompagnement floral complet pour votre mariage dans le Chablais ou au bord du Léman&nbsp;: bouquet de mariée, boutonnières, centres de table, arche florale et décoration de cérémonie sur mesure.</p>
+            <a href="#mariage" class="service-link">
+              Découvrir nos services mariage
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Deuil -->
+          <article class="service-card animate animate-delay-2">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C12 21 4 16 4 9c0-3.5 3.5-6 8-4.5C16.5 3 20 5.5 20 9c0 7-8 12-8 12z"/><path d="M12 4.5V21"/><path d="M8 11 Q12 9 16 11"/></svg>
+            </div>
+            <h3>Fleurs de deuil & condoléances</h3>
+            <p>Gerbes, couronnes, coussins et bouquets de deuil — des compositions dignes et sincères pour accompagner les familles et rendre un dernier hommage.</p>
+            <a href="#deuil" class="service-link">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Plantes -->
+          <article class="service-card animate animate-delay-1">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10l-1-6H8L7 20z"/><path d="M5 14h14"/><path d="M12 14v-5"/><path d="M12 9C12 9 9 7 9 4c2 0 4 1.5 3 5z"/><path d="M12 9C12 9 15 7 15 4c-2 0-4 1.5-3 5z"/></svg>
+            </div>
+            <h3>Plantes & cadeaux fleuris</h3>
+            <p>Orchidées, succulentes, plantes d'intérieur et compositions en pot — des cadeaux vivants et lumineux qui durent bien au-delà d'un bouquet, pour toutes les occasions.</p>
+            <a href="#contact" class="service-link">
+              Découvrir en boutique
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Événements -->
+          <article class="service-card animate animate-delay-2">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><rect x="6" y="12" width="12" height="6" rx="1"/><path d="M12 12V9"/><circle cx="12" cy="7.5" r="2"/><path d="M10 5.5 Q12 3 14 5.5"/></svg>
+            </div>
+            <h3>Décoration florale pour vos événements</h3>
+            <p>Inauguration, anniversaire d'entreprise, gala, réception privée au bord du Léman — nous créons des décors floraux sur mesure pour sublimer vos événements dans le Chablais et la région.</p>
+            <a href="#contact" class="service-link">
+              Demander un devis
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Livraison -->
+          <article class="service-card animate animate-delay-3">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Livraison de fleurs — Le Bouveret & Chablais</h3>
+            <p>Commandez vos fleurs par téléphone et faites-les livrer à domicile ou en entreprise — livraison dans le Chablais et les communes du bord du Léman.</p>
+            <a href="tel:0244813902" class="service-link" aria-label="Appeler pour une livraison au 024 481 39 02">
+              Commander avec livraison
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+        <div class="services-cta animate">
+          <a href="#contact" class="btn btn-secondary">Nous contacter pour une commande</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 5 — MARIAGE
+    ================================================ -->
+    <section id="mariage" class="mariage" aria-labelledby="mariage-h2">
+      <!-- Décoration vague discrète -->
+      <svg class="mariage-deco" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path d="M0 60 Q360 20 720 60 Q1080 100 1440 60" stroke="#4AB5C4" stroke-width="2" fill="none"/>
+        <path d="M0 80 Q360 40 720 80 Q1080 120 1440 80" stroke="#4AB5C4" stroke-width="1" fill="none"/>
+      </svg>
+      <div class="container">
+        <div class="mariage-grid">
+          <div class="mariage-text animate">
+            <span class="section-label">Fleuristerie de mariage</span>
+            <h2 id="mariage-h2">Mariage au bord du Léman — des fleurs à la hauteur du cadre</h2>
+            <p class="mariage-intro">Votre plus beau jour mérite des fleurs qui en capturent la lumière, la légèreté et l'émotion.</p>
+            <p>Se marier dans le Chablais, au bord du lac Léman — à Port-Valais, à Villeneuve, à Noville, sur les hauteurs de Saint-Gingolph ou dans les vignes de Vouvry — c'est choisir l'un des cadres les plus beaux de Suisse romande. La lumière sur l'eau, les Alpes en arrière-plan, la brise légère du lac&nbsp;: tout conspire à créer une atmosphère unique, que la décoration florale doit prolonger et magnifier.</p>
+            <p>Chez Alizé Fleurs, nous créons des univers floraux qui respirent avec le lieu. Des tons clairs et lacustres, des textures végétales légères, des fleurs fraîches qui bougent sous la brise. Nous prenons le temps de vous écouter lors d'une première consultation, nous composons un devis clair et sans surprise, et nous nous occupons de tout le jour J, de la boutonnière à l'arche florale.</p>
+            <ul class="mariage-list" aria-label="Ce que nous prenons en charge">
+              <li>Bouquet de mariée (brassée naturelle, cascade, rond, composition déstructurée...)</li>
+              <li>Boutonnières, corsages et coiffes florales</li>
+              <li>Décoration de la cérémonie (civile, religieuse ou laïque, en intérieur ou en extérieur)</li>
+              <li>Centres de table et compositions pour la réception</li>
+              <li>Arche florale, installation d'entrée et éléments de décoration</li>
+              <li>Décoration de voiture des mariés, pétales et tapis floraux</li>
+              <li>Livraison et mise en place sur site le jour du mariage</li>
+            </ul>
+            <div class="mariage-ctas">
+              <a href="#contact" class="btn btn-white-solid">Demander un devis mariage</a>
+              <a href="tel:0244813902" class="btn btn-outline-white" aria-label="Appeler Alizé Fleurs au 024 481 39 02">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+                Nous appeler — 024 481 39 02
+              </a>
+            </div>
+          </div>
+          <!-- NOTE: Remplacer ces images Pexels par de vraies photos de mariages réalisés par Alizé Fleurs (avec accord des mariés) -->
+          <div class="mariage-images animate animate-delay-2">
+            <figure>
+              <img src="images/gmaps-09.jpg"
+                alt="Bouquet de mariée rond en roses blanches et gypsophile — Alizé Fleurs, bord du Léman"
+                width="940" height="650" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="images/gmaps-07.jpg"
+                alt="Centres de table de réception en pots, roses pêche et gypsophile — mariage Alizé Fleurs, Chablais"
+                width="940" height="650" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="images/gmaps-08.jpg"
+                alt="Bracelet floral de demoiselle d'honneur en fleurs blanches — Alizé Fleurs"
+                width="940" height="650" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="images/gmaps-10.jpg"
+                alt="Bouquet en cascade d'orchidées vanda violettes et roses blanches — mariage Alizé Fleurs, Le Bouveret"
+                width="940" height="650" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 6 — DEUIL
+    ================================================ -->
+    <section id="deuil" class="deuil" aria-labelledby="deuil-h2">
+      <div class="container">
+        <div class="deuil-grid">
+          <!-- NOTE: Remplacer ces images Pexels par de sobres photos de compositions de deuil réalisées par Alizé Fleurs -->
+          <div class="deuil-images animate">
+            <figure>
+              <img src="images/gmaps-04.png"
+                alt="Composition florale blanche avec orchidée vanda, renoncules et lys — hommage sobre, Alizé Fleurs Port-Valais"
+                width="940" height="650" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="images/gmaps-09.jpg"
+                alt="Composition de roses blanches et verdure — gerbe de deuil sobre, Alizé Fleurs"
+                width="940" height="650" loading="lazy" />
+            </figure>
+          </div>
+          <div class="deuil-content animate animate-delay-2">
+            <span class="section-label">Accompagnement floral</span>
+            <h2 id="deuil-h2">Accompagnement floral pour les cérémonies de deuil</h2>
+            <p><em>Des compositions florales dignes et sincères pour honorer ceux qui nous ont quittés.</em></p>
+            <p>Dans les moments de deuil, les fleurs disent ce que les mots peinent à prononcer. Elles témoignent du respect, de l'affection, du souvenir — avec une douceur qui ne ressemble à rien d'autre.</p>
+            <p>Alizé Fleurs réalise avec soin des compositions florales pour accompagner les cérémonies funèbres dans la région de Port-Valais et du Bas-Chablais&nbsp;: gerbes, couronnes, coussins, bouquets de condoléances. Nous choisissons des fleurs sobres et respectueuses, dans des tonalités apaisantes, pour honorer la mémoire de ceux qui nous quittent avec toute la dignité que le moment exige.</p>
+            <p>Nous sommes disponibles pour répondre à vos besoins rapidement et avec discrétion. En cas d'urgence, appelez-nous directement.</p>
+            <a href="tel:0244813902" class="btn btn-primary" style="margin-top: 1.5rem;" aria-label="Appeler Alizé Fleurs au 024 481 39 02">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              Nous appeler — 024 481 39 02
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 7 — GALERIE
+    ================================================ -->
+    <section id="galerie" class="gallery" aria-labelledby="gallery-h2">
+      <div class="container">
+        <header class="section-header animate">
+          <span class="section-label">Notre savoir-faire</span>
+          <h2 id="gallery-h2">Nos créations en images</h2>
+          <p class="section-subtitle">Bouquets du quotidien, compositions de mariage, créations saisonnières — chaque réalisation est unique, pensée à la main.</p>
+          <p style="font-size:1rem;color:var(--color-text-secondary);margin-top:1rem;">Des bouquets printaniers aux arrangements d'automne, des compositions intimes aux décorations de réception au bord du Léman — retrouvez ici un aperçu de ce que la fraîcheur du lac, les saisons du Chablais et les mains d'Alizé Fleurs peuvent créer ensemble.</p>
+        </header>
+
+        <div class="gallery-filter" role="group" aria-label="Filtrer la galerie par catégorie">
+          <button class="gallery-filter-btn active" data-filter="tous" type="button" aria-pressed="true">Tous</button>
+          <button class="gallery-filter-btn" data-filter="bouquets" type="button" aria-pressed="false">Bouquets</button>
+          <button class="gallery-filter-btn" data-filter="mariages" type="button" aria-pressed="false">Mariages</button>
+          <button class="gallery-filter-btn" data-filter="plantes" type="button" aria-pressed="false">Plantes</button>
+        </div>
+
+        <!-- NOTE: Ces 9 images sont des placeholders Pexels libres de droits.
+             Remplacer obligatoirement par les vraies photos de réalisations d'Alizé Fleurs avant la mise en ligne.
+             Nommer les fichiers de façon SEO : bouquet-artisanal-le-bouveret-leman.webp, etc. -->
+        <div class="gallery-grid">
+          <figure class="gallery-item animate" data-category="bouquets">
+            <img src="images/gmaps-05.jpg"
+              alt="Présentoir de compositions roses aux orchidées et gerberas — Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-1" data-category="bouquets">
+            <img src="images/gmaps-10.jpg"
+              alt="Bouquet en cascade d'orchidées vanda violettes — création Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-2" data-category="bouquets">
+            <img src="images/gmaps-03.jpg"
+              alt="Coin plantes vertes et décoration naturelle de la boutique — Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-3" data-category="bouquets">
+            <img src="images/gmaps-06.jpg"
+              alt="Présentoir extérieur de plantes fleuries en pots — Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-1" data-category="bouquets">
+            <img src="images/gmaps-02.png"
+              alt="Étagères de bouquets, orchidées et produits en boutique — Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-2" data-category="bouquets">
+            <img src="images/gmaps-01.jpg"
+              alt="Ambiance hivernale et compositions décoratives en boutique — Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-1" data-category="mariages">
+            <img src="images/gmaps-07.jpg"
+              alt="Centres de table de mariage en pots et gypsophile — Alizé Fleurs, bord du Léman"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-2" data-category="mariages">
+            <img src="images/gmaps-09.jpg"
+              alt="Bouquet de mariée en roses blanches — Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+          <figure class="gallery-item animate animate-delay-1" data-category="plantes">
+            <img src="images/gmaps-06.jpg"
+              alt="Plantes fleuries en pots — plantes et cadeaux Alizé Fleurs, Le Bouveret"
+              width="940" height="650" loading="lazy" />
+          </figure>
+        </div>
+        <div class="gallery-cta animate">
+          <a href="#contact" class="btn btn-secondary">Vous avez un projet&nbsp;? Contactez-nous</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 8 — AVIS CLIENTS
+    ================================================ -->
+    <section id="avis" class="testimonials" aria-labelledby="avis-h2">
+      <div class="container">
+        <header class="section-header animate">
+          <span class="section-label">Témoignages</span>
+          <h2 id="avis-h2">Ce que nos clients disent de nous</h2>
+          <p class="section-subtitle">5/5 sur Google · 11 avis — une note parfaite qui nous touche et qui nous engage chaque jour.</p>
+        </header>
+        <div class="testimonials-badge-wrap animate">
+          <div class="badge-stars-large" role="img" aria-label="Note Google : 5 étoiles sur 5 — 11 avis">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="score">5 / 5</span>
+            <span class="label">Note parfaite · 11 avis Google</span>
+          </div>
+        </div>
+        <!-- AVIS FICTIFS À REMPLACER — Ces 3 témoignages sont des EXEMPLES FICTIFS rédigés à partir des personas.
+             Les remplacer OBLIGATOIREMENT par de vrais avis extraits de la fiche Google My Business d'Alizé Fleurs
+             (5/5 sur 11 avis) avant toute mise en ligne ou présentation au client. -->
+        <div class="testimonials-grid">
+          <article class="testimonial-card animate">
+            <span class="testimonial-quote" aria-hidden="true">&ldquo;</span>
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <p class="testimonial-text">J'ai commandé un bouquet par téléphone pour l'anniversaire de ma mère, sans me déplacer. Quand elle a ouvert la porte, ses yeux ont dit tout ce que je voulais entendre. Les fleurs étaient fraîches, la composition magnifique, l'emballage impeccable. Un grand merci à Alizé Fleurs pour ce soin et cette générosité.</p>
+            <footer>
+              <p class="testimonial-author">Nathalie R.</p>
+              <p class="testimonial-location">Vouvry</p>
+            </footer>
+          </article>
+          <article class="testimonial-card animate animate-delay-1">
+            <span class="testimonial-quote" aria-hidden="true">&ldquo;</span>
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <p class="testimonial-text">Alizé Fleurs a pris en charge toute la décoration florale de notre mariage au bord du Léman. Le bouquet de mariée était exactement comme je l'avais imaginé — léger, frais, lumineux, parfaitement en accord avec le lac et le cadre de notre réception. Tout était installé à la perfection le matin du mariage. Merci infiniment.</p>
+            <footer>
+              <p class="testimonial-author">Camille & Julien M.</p>
+              <p class="testimonial-location">Le Bouveret</p>
+            </footer>
+          </article>
+          <article class="testimonial-card animate animate-delay-2">
+            <span class="testimonial-quote" aria-hidden="true">&ldquo;</span>
+            <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <p class="testimonial-text">Nous séjournions au Bouveret pour les vacances et souhaitions offrir des fleurs à nos hôtes. J'ai appelé Alizé Fleurs sans vraiment savoir ce qui était disponible — la fleuriste a été accueillante, rapide et de très bon conseil. Le bouquet était superbe, les prix très raisonnables. Une adresse à retenir absolument.</p>
+            <footer>
+              <p class="testimonial-author">Thomas & Marie-Claude B.</p>
+              <p class="testimonial-location">Lausanne</p>
+            </footer>
+          </article>
+        </div>
+        <div class="testimonials-cta animate">
+          <a href="https://www.google.com/maps/search/Alizé+Fleurs+Le+Bouveret" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Voir tous les avis sur Google
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 9 — CONTACT & HORAIRES
+    ================================================ -->
+    <section id="contact" class="contact" aria-labelledby="contact-h2">
+      <div class="container">
+        <header class="section-header animate">
+          <span class="section-label">Nous trouver</span>
+          <h2 id="contact-h2">Nous trouver au Bouveret — Horaires et contact</h2>
+          <p class="section-subtitle">Venez nous rendre visite sur la route cantonale ou appelez-nous — nous sommes là pour vous.</p>
+        </header>
+        <div class="contact-layout">
+
+          <!-- Infos contact -->
+          <aside class="contact-info-block animate" aria-label="Coordonnées Alizé Fleurs">
+            <h3>Coordonnées</h3>
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.686 2 6 4.686 6 8c0 5 6 12 6 12s6-7 6-12c0-3.314-2.686-6-6-6z"/><circle cx="12" cy="8" r="2"/></svg>
+              </div>
+              <address style="font-style: normal;">
+                <p class="info-label">Adresse</p>
+                <div class="info-value">
+                  Alizé Fleurs<br>
+                  Rte Cantonale 25<br>
+                  1897 Le Bouveret<br>
+                  <span style="color:var(--color-text-muted);font-size:0.875rem;">(commune de Port-Valais, Valais, Suisse)</span>
+                </div>
+              </address>
+            </div>
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              </div>
+              <div>
+                <p class="info-label">Téléphone</p>
+                <div class="info-value"><a href="tel:0244813902">024 481 39 02</a></div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="info-label">Email</p>
+                <div class="info-value" style="color:var(--color-text-muted);font-style:italic;font-size:0.9375rem;">À confirmer avec le client</div>
+              </div>
+            </div>
+            <div class="info-item" style="align-items: flex-start;">
+              <div class="info-icon" style="margin-top:2px;" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <p class="info-label">Horaires d'ouverture</p>
+                <div class="hours-table" role="table" aria-label="Horaires Alizé Fleurs">
+                  <span class="d" role="rowheader">Lun – Ven</span><span class="t" role="cell">08h00 – 12h00 / 14h00 – 18h30</span>
+                  <span class="d" role="rowheader">Samedi</span><span class="t" role="cell">08h00 – 12h00</span>
+                  <span class="d" role="rowheader">Dimanche</span><span class="t" role="cell">Fermé</span>
+                </div>
+                <div class="confirm-note-inline" role="note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Horaires indicatifs — à confirmer avec le client avant mise en ligne
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Formulaire de contact -->
+          <div class="contact-form-card animate animate-delay-2">
+            <h3>Envoyer un message</h3>
+            <!-- Message de confirmation après envoi réussi -->
+            <div class="form-success" id="form-success" role="alert" aria-live="polite">
+              <svg class="check-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <p>Votre message a bien été envoyé&nbsp;!</p>
+              <p class="sub">Nous vous répondrons dans les plus brefs délais. Vous pouvez également nous joindre directement au <a href="tel:0244813902">024 481 39 02</a>.</p>
+            </div>
+            <!--
+              CONFIGURATION FORMULAIRE DE CONTACT
+              ─────────────────────────────────────────────────────────────
+              1. Créer un compte gratuit sur https://formspree.io
+              2. Créer un formulaire et noter l'ID (format : xXXXXXXX)
+              3. Remplacer VOTRE_ID_FORMSPREE dans l'attribut action ci-dessous
+              4. Renseigner l'email de réception dans les paramètres Formspree
+              ─────────────────────────────────────────────────────────────
+              Pour tester en local : le formulaire affiche la confirmation
+              JS sans réel envoi si l'ID Formspree est invalide (catch).
+            -->
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/VOTRE_ID_FORMSPREE"
+              method="POST"
+              class="form-stack"
+              aria-label="Formulaire de contact Alizé Fleurs"
+            >
+              <!-- Honeypot anti-spam (invisible) -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="f-name" class="form-label">Prénom et nom<span class="req" aria-label="champ obligatoire">*</span></label>
+                  <input type="text" id="f-name" name="name" class="f-input" placeholder="Sophie Dupont" required autocomplete="name" aria-required="true" />
+                </div>
+                <div class="form-field">
+                  <label for="f-phone" class="form-label">Téléphone<span class="req" aria-label="champ obligatoire">*</span></label>
+                  <input type="tel" id="f-phone" name="phone" class="f-input" placeholder="079 123 45 67" required autocomplete="tel" aria-required="true" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="f-email" class="form-label">Email<span class="req" aria-label="champ obligatoire">*</span></label>
+                <input type="email" id="f-email" name="email" class="f-input" placeholder="votre@email.ch" required autocomplete="email" aria-required="true" />
+              </div>
+
+              <div class="form-field">
+                <label for="f-type" class="form-label">Type de projet</label>
+                <select id="f-type" name="project_type" class="f-select f-input">
+                  <option value="">— Sélectionner —</option>
+                  <option value="bouquet">Bouquet & composition florale</option>
+                  <option value="mariage">Mariage</option>
+                  <option value="deuil">Deuil & condoléances</option>
+                  <option value="evenement">Décoration événementielle</option>
+                  <option value="plantes">Plantes & cadeaux</option>
+                  <option value="livraison">Livraison</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="f-date" class="form-label">Date souhaitée</label>
+                <input type="date" id="f-date" name="desired_date" class="f-input" />
+              </div>
+
+              <div class="form-field">
+                <label for="f-message" class="form-label">Message / description de votre projet</label>
+                <textarea id="f-message" name="message" class="f-textarea" placeholder="Décrivez votre projet, vos souhaits, votre budget indicatif..." rows="5"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Envoyer ma demande
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              <p style="font-size:0.75rem;color:var(--color-text-muted);text-align:center;margin-top:0.5rem;">Vos données sont utilisées uniquement pour répondre à votre demande et ne seront jamais partagées avec des tiers.</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Carte OpenStreetMap — centrée sur Rte Cantonale 25, 1897 Le Bouveret -->
+        <div class="contact-map animate">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=6.845%2C46.373%2C6.885%2C46.395&layer=mapnik&marker=46.383%2C6.865"
+            loading="lazy"
+            title="Localisation Alizé Fleurs — Rte Cantonale 25, 1897 Le Bouveret, Port-Valais, Valais"
+            aria-label="Carte OpenStreetMap indiquant l'emplacement d'Alizé Fleurs à Le Bouveret"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SECTION 10 — FAQ
+    ================================================ -->
+    <section id="faq" class="faq" aria-labelledby="faq-h2">
+      <div class="container">
+        <header class="section-header animate">
+          <span class="section-label">Questions fréquentes</span>
+          <h2 id="faq-h2">Questions fréquentes</h2>
+        </header>
+        <div class="faq-list">
+
+          <div class="faq-item animate">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
+              <span>Peut-on commander un bouquet par téléphone sans se déplacer&nbsp;?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-btn-1">
+              <div class="faq-answer-inner">
+                <p>Oui, absolument. Appelez-nous au <a href="tel:0244813902">024 481 39 02</a> et nous composons votre bouquet selon vos souhaits, votre budget et la date de remise souhaitée. Vous pouvez ensuite le récupérer directement en boutique sur la route cantonale au Bouveret, ou selon les disponibilités, opter pour la livraison dans la région.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate animate-delay-1">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
+              <span>Livrez-vous les fleurs à domicile dans la région&nbsp;?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-btn-2">
+              <div class="faq-answer-inner">
+                <p>Oui, nous proposons un service de livraison à domicile et en entreprise dans le Chablais valaisan et les communes riveraines du Léman&nbsp;: Le Bouveret, Port-Valais, Vouvry, Vionnaz, Saint-Gingolph et communes voisines. Appelez-nous au <a href="tel:0244813902">024 481 39 02</a> pour connaître les disponibilités, les délais et les conditions selon votre adresse.</p>
+                <p class="faq-note">* Zones exactes desservies et éventuels tarifs de livraison à confirmer avec le client.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate animate-delay-2">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+              <span>Comment se déroule une consultation pour un mariage&nbsp;?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-btn-3">
+              <div class="faq-answer-inner">
+                <p>Contactez-nous par téléphone ou via le formulaire de contact pour fixer un rendez-vous. Lors de cette consultation, nous discutons de votre vision — style floral, couleurs, lieu de cérémonie et de réception, ambiance souhaitée, budget. Nous vous soumettons ensuite un devis détaillé, gratuit et sans engagement. Plus tôt vous nous contactez, mieux nous pouvons planifier — notamment pour les mariages en haute saison estivale autour du Léman.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate animate-delay-1">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
+              <span>Dans quel délai faut-il commander pour un mariage ou un événement&nbsp;?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-btn-4">
+              <div class="faq-answer-inner">
+                <p>Pour un mariage, nous recommandons de nous contacter au minimum 3 à 6 mois à l'avance. Pour un événement professionnel ou une réception privée, un délai de 2 à 4 semaines est généralement suffisant. Pour un bouquet simple, appelez-nous la veille ou le matin même — sous réserve de disponibilité. En période estivale (juillet-août), la demande est plus soutenue au Bouveret&nbsp;: mieux vaut anticiper.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animate animate-delay-2">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
+              <span>Travaillez-vous avec des fleurs de saison&nbsp;?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-btn-5">
+              <div class="faq-answer-inner">
+                <p>Nous travaillons en priorité avec des fleurs de saison pour vous garantir la fraîcheur maximale et les meilleures couleurs. Les saisons du bord du Léman — printemps lacustre, étés lumineux, automnes dorés — nourrissent nos palettes et donnent à nos créations une légèreté et une justesse naturelles. Pour des fleurs spécifiques hors saison, nous pouvons commander sur demande avec un délai d'approvisionnement — n'hésitez pas à nous en parler lors de votre commande.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  =================================================== -->
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Colonne 1 — Marque -->
+        <div>
+          <span class="footer-logo-name">Alizé Fleurs</span>
+          <p class="footer-tagline">
+            Fleuriste artisanal au Bouveret, bord du Léman<br>
+            <span class="stars" aria-hidden="true">★★★★★</span> 5/5 Google · Note parfaite
+          </p>
+        </div>
+        <!-- Colonne 2 — Navigation -->
+        <nav class="footer-nav" aria-label="Navigation pied de page">
+          <span class="footer-col-title">Navigation</span>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#prestations">Prestations</a></li>
+            <li><a href="#mariage">Mariage</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#avis">Avis</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <!-- Colonne 3 — Contact & Horaires -->
+        <div>
+          <span class="footer-col-title">Contact & Horaires</span>
+          <address style="font-style:normal;">
+            <div class="footer-contact-row">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.686 2 6 4.686 6 8c0 5 6 12 6 12s6-7 6-12c0-3.314-2.686-6-6-6z"/><circle cx="12" cy="8" r="2"/></svg>
+              <span>Rte Cantonale 25<br>1897 Le Bouveret (Port-Valais)<br>Valais, Suisse</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              <a href="tel:0244813902">024 481 39 02</a>
+            </div>
+          </address>
+          <div class="footer-hours">
+            <div class="row"><span class="day">Lun–Ven</span><span>08h – 12h / 14h – 18h30</span></div>
+            <div class="row"><span class="day">Samedi</span><span>08h – 12h</span></div>
+            <div class="row"><span class="day">Dimanche</span><span>Fermé</span></div>
+            <p class="confirm">* Horaires à confirmer avec le client avant mise en ligne</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Alizé Fleurs — Tous droits réservés</p>
+        <p class="footer-legal"><a href="#">Mentions légales</a></p>
+      </div>
+
+      <!-- Crédit photos — issues de la page Google Maps de l'établissement (placeholder maquette) -->
+      <p class="footer-pexels">
+        Photos&nbsp;: page <a href="https://maps.google.com/?cid=12453512047998507167" target="_blank" rel="noopener noreferrer">Google Maps</a> de l'établissement —
+        placeholders (licence Google, usage maquette) à remplacer par les photos haute résolution d'Alizé Fleurs avant mise en ligne.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       BARRE D'APPEL MOBILE (fixe en bas < 768px)
+  =================================================== -->
+  <div class="mobile-cta-bar" role="complementary" aria-label="Appel rapide">
+    <a href="tel:0244813902" aria-label="Appeler Alizé Fleurs maintenant au 024 481 39 02">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.81 19.79 19.79 0 01.1 2.28 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+      Appeler maintenant — 024 481 39 02
+    </a>
+  </div>
+
+  <!-- ===================================================
+       JAVASCRIPT VANILLA
+  =================================================== -->
+  <script>
+  'use strict';
+
+  // ─── Sélecteurs utilitaires ───────────────────────────
+  const qs  = (s, p) => (p || document).querySelector(s);
+  const qsa = (s, p) => Array.from((p || document).querySelectorAll(s));
+
+  // ─── 1. Header scroll ─────────────────────────────────
+  function initHeaderScroll() {
+    const header = qs('#site-header');
+    if (!header) return;
+    const update = () => header.classList.toggle('scrolled', window.scrollY > 50);
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+
+  // ─── 2. Menu hamburger mobile ─────────────────────────
+  function initMobileMenu() {
+    const btn  = qs('.hamburger');
+    const menu = qs('#mobile-menu');
+    if (!btn || !menu) return;
+
+    function close() {
+      btn.setAttribute('aria-expanded', 'false');
+      menu.setAttribute('aria-hidden', 'true');
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    }
+    function toggle() {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      if (open) { close(); return; }
+      btn.setAttribute('aria-expanded', 'true');
+      menu.setAttribute('aria-hidden', 'false');
+      btn.classList.add('open');
+      menu.classList.add('open');
+      document.body.classList.add('menu-open');
+    }
+
+    btn.addEventListener('click', toggle);
+    qsa('a', menu).forEach(a => a.addEventListener('click', close));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+        close();
+        btn.focus();
+      }
+    });
+  }
+
+  // ─── 3. Navigation active au scroll ───────────────────
+  function initActiveNav() {
+    const sections  = qsa('section[id]');
+    const navLinks  = qsa('.main-nav a[href^="#"]');
+    const update = () => {
+      const pos = window.scrollY + 110;
+      sections.forEach(sec => {
+        if (pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
+          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + sec.id));
+        }
+      });
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+
+  // ─── 4. Smooth scroll (ancres internes) ───────────────
+  function initSmoothScroll() {
+    const header = qs('#site-header');
+    qsa('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (!href || href === '#') return;
+        const target = qs(href);
+        if (!target) return;
+        e.preventDefault();
+        const offset = (header ? header.offsetHeight : 72) + 16;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+        history.pushState(null, '', href);
+      });
+    });
+  }
+
+  // ─── 5. Scroll reveal (IntersectionObserver) ──────────
+  function initScrollReveal() {
+    const els = qsa('.animate');
+    if (!els.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(el => el.classList.add('visible'));
+      return;
+    }
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+    els.forEach(el => obs.observe(el));
+  }
+
+  // ─── 6. FAQ accordéon ─────────────────────────────────
+  function initFAQ() {
+    const items = qsa('.faq-item');
+    items.forEach(item => {
+      const btn = qs('.faq-question', item);
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        items.forEach(i => { i.classList.remove('open'); qs('.faq-question', i)?.setAttribute('aria-expanded', 'false'); });
+        if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  }
+
+  // ─── 7. Filtre galerie ────────────────────────────────
+  function initGalleryFilter() {
+    const btns  = qsa('.gallery-filter-btn');
+    const items = qsa('.gallery-item');
+    if (!btns.length) return;
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        const f = btn.dataset.filter;
+        items.forEach(item => {
+          item.style.display = (f === 'tous' || item.dataset.category === f) ? '' : 'none';
+        });
+      });
+    });
+  }
+
+  // ─── 8. Formulaire de contact ─────────────────────────
+  function initContactForm() {
+    const form    = qs('#contact-form');
+    const success = qs('#form-success');
+    if (!form || !success) return;
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const submitBtn  = qs('[type="submit"]', form);
+      const origLabel  = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Envoi en cours…';
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          const data = await res.json().catch(() => ({}));
+          const msg  = data.errors ? data.errors.map(err => err.message).join(', ') : 'Veuillez réessayer ou nous appeler directement.';
+          alert(msg);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = origLabel;
+        }
+      } catch {
+        // Mode test local : afficher la confirmation sans réel envoi
+        // TODO : configurer Formspree (remplacer VOTRE_ID_FORMSPREE) avant mise en ligne
+        form.style.display = 'none';
+        success.style.display = 'block';
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  }
+
+  // ─── Init ─────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    initHeaderScroll();
+    initMobileMenu();
+    initActiveNav();
+    initSmoothScroll();
+    initScrollReveal();
+    initFAQ();
+    initGalleryFilter();
+    initContactForm();
+  });
+  </script>
+
+</body>
+</html>
