@@ -1,0 +1,81 @@
+{
+  "_source": "Google Maps / Places API",
+  "_license_note": "Photos contributions utilisateurs. Afficher attribution auteur. Placeholder maquette — remplacer par photos client en prod.",
+  "place": {
+    "id": "ChIJF75yE6mejkcRn5j_4jnD06w",
+    "name": "Alizé Fleurs",
+    "address": "Rte Cantonale 25, 1897 Le Bouveret, Suisse"
+  },
+  "images": [
+    {
+      "file": "gmaps-01.jpg",
+      "width_px": 2048,
+      "height_px": 1536,
+      "orientation": "landscape",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-02.png",
+      "width_px": 3264,
+      "height_px": 1836,
+      "orientation": "landscape",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-03.jpg",
+      "width_px": 3024,
+      "height_px": 4032,
+      "orientation": "portrait",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-04.png",
+      "width_px": 3024,
+      "height_px": 3024,
+      "orientation": "landscape",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-05.jpg",
+      "width_px": 3024,
+      "height_px": 4032,
+      "orientation": "portrait",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-06.jpg",
+      "width_px": 3024,
+      "height_px": 4032,
+      "orientation": "portrait",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-07.jpg",
+      "width_px": 1068,
+      "height_px": 1600,
+      "orientation": "portrait",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-08.jpg",
+      "width_px": 3024,
+      "height_px": 4032,
+      "orientation": "portrait",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-09.jpg",
+      "width_px": 3024,
+      "height_px": 4032,
+      "orientation": "portrait",
+      "credit": "Alizé Fleurs"
+    },
+    {
+      "file": "gmaps-10.jpg",
+      "width_px": 3024,
+      "height_px": 3024,
+      "orientation": "landscape",
+      "credit": "Alizé Fleurs"
+    }
+  ]
+}

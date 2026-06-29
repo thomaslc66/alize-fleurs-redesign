@@ -1,0 +1,994 @@
+{
+  "meta": {
+    "site": "alize-fleurs",
+    "project": "Alizé Fleurs — Fleuriste artisanal, Le Bouveret (Port-Valais, Valais, Suisse)",
+    "style": "lacustre-lumineux",
+    "mood": ["aérien", "lacustre", "lumineux"],
+    "inspiration": "Entre une boutique de fleurs scandinave côtière et un fleuriste artisanal français de bord de mer, revu à travers l'esthétique lacustre suisse-lémanique — lumière de l'eau, brise légère, nacre et sable doré. Référence de niveau : Bloom & Wild (UK) pour la légèreté digitale, Studio Fleuriste Côtier pour l'ancrage maritime.",
+    "generated_at": "2026-06-18",
+    "logo_url": null,
+    "logo_colors_analyzed": [],
+    "palette_strategy": "Création from scratch — aucun logo ni site existant. Palette construite entièrement sur l'identité géographique et sémantique d'Alizé Fleurs : bleu Léman (#1E6A85) comme couleur signature des eaux du lac en plein jour, turquoise lacustre (#4AB5C4) pour les eaux peu profondes, sable doré (#CAB07E) comme contre-point chaud évoquant la plage et le bois blanchi, blanc nacré (#F7F5F2) comme fond principal évoquant les galets du Léman et la lumière diffuse du matin.",
+    "distinctiveness": "Palette entièrement distincte des 6 autres fleuristes valaisans du portefeuille — Au temps du Muguet (vert/rose), Fleur d'Argile (terracotta/vert botanique), LAEpTiTes Fleurs (sauge/rose poudré), T'as où les fleurs (vignoble/abricot/terracotta) : aucun rose, aucun vert botanique profond, aucun terracotta, aucun bordeaux. Uniquement des teintes aquatiques, nacrées et dorées — un langage visuel sans équivalent dans le paysage floral romand. Cormorant Garamond + Jost sont réservés exclusivement à ce projet dans le portefeuille.",
+    "image_source": "Pexels",
+    "image_note": "placeholders libres de droits — à remplacer par les photos du client avant mise en ligne",
+    "reasoning": "Couleur primaire #1E6A85 (Bleu Léman) : WCAG AA 6.1:1 sur blanc, 5.6:1 sur blanc nacré — robuste et accessible. Couleur nuit #1A3A4E : WCAG AAA 11.4:1 sur blanc — parfaite pour sections mariage et footer. Turquoise #4AB5C4 réservé aux icônes et décoratifs (2.4:1 insuffisant pour texte sur blanc — ne jamais l'utiliser seul comme couleur de texte). Sable doré #CAB07E sur fond nuit #1A3A4E : 5.7:1 AA — idéal pour les étoiles de notation et accents sur sections sombres. Cormorant Garamond : ses traits extrêmement fins évoquent les reflets de lumière sur l'eau du Léman — la plus aérienne des polices serif Google Fonts. Jost complète avec son géométrique doux, léger et moderne, excellent en petite taille mobile."
+  },
+
+  "colors": {
+    "primary": {
+      "value": "#1E6A85",
+      "name": "Bleu Léman",
+      "contrast_on_white": "6.1:1",
+      "contrast_on_surface_alt": "5.6:1",
+      "wcag": "AA",
+      "usage": "Boutons CTA primaires (fond), liens actifs, contour de focus, bordures de sections, accents interactifs — couleur signature de l'eau du lac Léman en plein jour"
+    },
+    "primary_dark": {
+      "value": "#155570",
+      "name": "Bleu Léman profond",
+      "contrast_on_white": "7.8:1",
+      "wcag": "AA",
+      "usage": "État hover et focus des boutons primaires, liens au survol"
+    },
+    "primary_light": {
+      "value": "#2A7B9E",
+      "name": "Bleu Léman clair",
+      "contrast_on_white": "4.8:1",
+      "contrast_on_surface_alt": "4.4:1",
+      "wcag": "AA grand texte uniquement (>=18px/14px bold)",
+      "usage": "Variante claire pour gradients, accents décoratifs, grands titres H1/H2 uniquement — ne pas utiliser pour corps de texte ou petits labels"
+    },
+    "primary_pale": {
+      "value": "#D6EBF4",
+      "name": "Bleu Léman très pâle",
+      "usage": "Fond de sections légères, état hover sur cartes de service, tints discrets"
+    },
+    "accent": {
+      "value": "#4AB5C4",
+      "name": "Turquoise lacustre",
+      "contrast_on_night_bg": "4.9:1",
+      "dark_text_on_accent": "6.7:1",
+      "wcag_note": "Ne pas utiliser seul comme couleur de texte sur fond blanc (2.4:1 — insuffisant). Toujours associer à du texte sombre (#12232E) ou utiliser sur fond nuit (#1A3A4E).",
+      "usage": "Icônes de service, séparateurs de section, éléments SVG décoratifs (vague, tige), bordure supérieure de la bande de réassurance, accents sur fond sombre mariage"
+    },
+    "accent_dark": {
+      "value": "#329BAA",
+      "name": "Turquoise profond",
+      "usage": "Hover sur éléments turquoise, version accessible pour texte sur fond blanc si nécessaire"
+    },
+    "accent_pale": {
+      "value": "#B8E4EC",
+      "name": "Turquoise pâle",
+      "usage": "Fonds légers, bordures subtiles, tints de l'accent"
+    },
+    "water_green": {
+      "value": "#9DD4C4",
+      "name": "Vert d'eau pâle",
+      "dark_text_contrast": "9.7:1",
+      "usage": "Fonds décoratifs légers, badges de réassurance, séparateurs végétaux lacustres — toujours avec texte sombre"
+    },
+    "water_green_pale": {
+      "value": "#D4EEE9",
+      "name": "Vert d'eau très pâle",
+      "usage": "Arrière-plans très subtils, tints végétaux d'ambiance"
+    },
+    "sand": {
+      "value": "#CAB07E",
+      "name": "Sable doré lumineux",
+      "contrast_on_night_bg": "5.7:1",
+      "wcag_on_night": "AA",
+      "usage": "Étoiles de notation (badge 5/5), accents chauds dorés sur fond sombre mariage/footer, contre-point thermique à la palette aquatique. Ne pas utiliser comme texte sur fond blanc (2.1:1 — insuffisant)."
+    },
+    "sand_light": {
+      "value": "#EDE0CC",
+      "name": "Sable clair",
+      "usage": "Fond de sections chaudes alternatives (À propos avec texture subtile)"
+    },
+    "sand_pale": {
+      "value": "#F5EDD9",
+      "name": "Sable pâle",
+      "usage": "Tints chauds très discrets, fonds de cartes alternatives"
+    },
+    "night": {
+      "value": "#1A3A4E",
+      "name": "Bleu Léman nuit",
+      "contrast_white_text": "11.4:1",
+      "wcag": "AAA",
+      "usage": "Fond de la section Mariage (élégance nocturne lacustre), fond du Footer, overlay semi-transparent sur photos Hero — évoque la profondeur du lac à l'heure bleue"
+    },
+    "night_mid": {
+      "value": "#1F4C63",
+      "name": "Bleu nuit intermédiaire",
+      "usage": "Hover sur cartes en section sombre, variante de profondeur pour gradients, fond de cartes mariage"
+    },
+    "surface": {
+      "value": "#FFFFFF",
+      "name": "Blanc pur",
+      "usage": "Fond des cartes de service, formulaire de contact, éléments modaux, inputs — blanc lumière"
+    },
+    "surface_alt": {
+      "value": "#F7F5F2",
+      "name": "Blanc nacré",
+      "usage": "Fond général du site — légèrement chaud (tendance crème/nacre), évoque les galets clairs du Léman et la lumière diffuse d'un matin de lac. Alternative à surface dans toutes les sections à fond clair."
+    },
+    "surface_blue": {
+      "value": "#EDF5F9",
+      "name": "Bleu ciel très pâle",
+      "usage": "Fond de la bande de réassurance, hover de navigation, tints bleutés légers"
+    },
+    "background": {
+      "value": "#F7F5F2",
+      "name": "Fond général nacré",
+      "usage": "Couleur body/html du site — équivaut à surface_alt. Donne l'unité chromatique nacrée à l'ensemble."
+    },
+    "text_primary": {
+      "value": "#12232E",
+      "name": "Bleu nuit quasi-noir",
+      "contrast_on_white": "16.1:1",
+      "contrast_on_surface_alt": "15.8:1",
+      "wcag": "AAA",
+      "usage": "Corps de texte principal, descriptions longues, contenu éditorial — teinte légèrement bleutée qui s'intègre à la palette lacustre sans rupture vers le noir pur"
+    },
+    "text_secondary": {
+      "value": "#2C4A5A",
+      "name": "Bleu marine texte",
+      "contrast_on_white": "9.4:1",
+      "wcag": "AAA",
+      "usage": "Sous-titres de section, descriptions de services, textes complémentaires — bleu plus doux que text_primary"
+    },
+    "text_muted": {
+      "value": "#4E6B7A",
+      "name": "Bleu grisé atténué",
+      "contrast_on_white": "5.7:1",
+      "contrast_on_surface_alt": "5.2:1",
+      "wcag": "AA",
+      "usage": "Métadonnées, légendes, placeholders, textes tertiaires, crédits photo Pexels — uniquement au-dessus de 14px"
+    },
+    "text_on_primary": {
+      "value": "#FFFFFF",
+      "contrast_on_primary": "6.1:1",
+      "wcag": "AA",
+      "usage": "Texte blanc sur fond #1E6A85 (boutons, badges)"
+    },
+    "text_on_dark": {
+      "value": "#FFFFFF",
+      "contrast_on_night": "11.4:1",
+      "wcag": "AAA",
+      "usage": "Texte blanc sur fond #1A3A4E (section mariage, footer)"
+    },
+    "text_on_dark_muted": {
+      "value": "rgba(255, 255, 255, 0.72)",
+      "usage": "Texte secondaire discret sur fond sombre — horaires condensés au footer, meta-informations, crédits en section sombre"
+    },
+    "border": {
+      "value": "#D4E4EC",
+      "name": "Bordure bleu pâle lacustre",
+      "usage": "Bordures des cartes, inputs de formulaire, séparateurs de contenu"
+    },
+    "border_light": {
+      "value": "#EAF1F5",
+      "name": "Bordure très légère",
+      "usage": "Séparateurs ultra-discrets, bordures d'éléments secondaires, dividers de navigation"
+    },
+    "border_focus": {
+      "value": "#1E6A85",
+      "usage": "Bordure de focus visible sur tous les éléments interactifs — accessibilité clavier WCAG 2.4.7"
+    },
+    "error": {
+      "value": "#C0392B",
+      "contrast_on_white": "5.4:1",
+      "wcag": "AA",
+      "usage": "Texte d'erreur formulaire, messages de validation en échec"
+    },
+    "error_bg": {
+      "value": "#FDECEA",
+      "usage": "Fond d'alerte erreur, encart de message d'erreur"
+    },
+    "success": {
+      "value": "#1A7A45",
+      "contrast_on_white": "5.4:1",
+      "wcag": "AA",
+      "usage": "Confirmation d'envoi formulaire, validations positives, badge de succès"
+    },
+    "success_bg": {
+      "value": "#E8F8EE",
+      "usage": "Fond de message de confirmation après envoi du formulaire"
+    },
+    "warning": {
+      "value": "#926200",
+      "contrast_on_white": "5.3:1",
+      "wcag": "AA",
+      "usage": "Alertes non critiques, notes informatives (horaires à confirmer, RGPD)"
+    },
+    "warning_bg": {
+      "value": "#FEF3C7",
+      "usage": "Fond d'avertissement, encart information"
+    }
+  },
+
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Jost",
+      "accent": "Dancing Script",
+      "fallback_heading": "Georgia, 'Times New Roman', serif",
+      "fallback_body": "system-ui, -apple-system, sans-serif",
+      "fallback_accent": "cursive",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400&family=Jost:wght@300;400;500&display=swap",
+      "google_fonts_preconnect_1": "https://fonts.googleapis.com",
+      "google_fonts_preconnect_2": "https://fonts.gstatic.com",
+      "note": "Cormorant Garamond (serif fin et aérien, poids 400 + 600 + italic 400) + Jost (géométrique doux, poids 300 + 400 + 500). Dancing Script uniquement pour la tagline de marque. Ne charger que les graisses listées pour la performance Lighthouse."
+    },
+    "scale": {
+      "xs":  { "rem": "0.75rem",   "px": "12px" },
+      "sm":  { "rem": "0.875rem",  "px": "14px" },
+      "base":{ "rem": "1rem",      "px": "16px" },
+      "lg":  { "rem": "1.125rem",  "px": "18px" },
+      "xl":  { "rem": "1.25rem",   "px": "20px" },
+      "2xl": { "rem": "1.5rem",    "px": "24px" },
+      "3xl": { "rem": "1.875rem",  "px": "30px" },
+      "4xl": { "rem": "2.25rem",   "px": "36px" },
+      "5xl": { "rem": "3rem",      "px": "48px" },
+      "6xl": { "rem": "3.75rem",   "px": "60px" }
+    },
+    "weights": {
+      "light":    300,
+      "regular":  400,
+      "medium":   500,
+      "semibold": 600
+    },
+    "line_heights": {
+      "tight":   1.25,
+      "snug":    1.375,
+      "normal":  1.5,
+      "relaxed": 1.625,
+      "loose":   2.0
+    },
+    "letter_spacings": {
+      "tight":   "-0.025em",
+      "snug":    "-0.01em",
+      "normal":  "0em",
+      "wide":    "0.025em",
+      "wider":   "0.05em",
+      "widest":  "0.1em"
+    },
+    "heading_usage": {
+      "h1": {
+        "font": "Cormorant Garamond",
+        "weight": 400,
+        "size_mobile": "3xl (1.875rem)",
+        "size_desktop": "5xl–6xl (3rem–3.75rem)",
+        "line_height": "tight (1.25)",
+        "letter_spacing": "-0.01em",
+        "color": "text_primary (#12232E) sur fond clair — text_on_dark (#FFFFFF) sur hero sombre",
+        "note": "Cormorant Garamond Regular 400 pour les grands titres — la légèreté du trait évoque la finesse d'un reflet sur l'eau"
+      },
+      "h2": {
+        "font": "Cormorant Garamond",
+        "weight": 400,
+        "size_mobile": "2xl (1.5rem)",
+        "size_desktop": "3xl–4xl (1.875rem–2.25rem)",
+        "line_height": "snug (1.375)",
+        "letter_spacing": "-0.01em",
+        "color": "text_primary (#12232E)",
+        "note": "Régularité lacustre — pas de gras pour les H2 principaux, la finesse prime"
+      },
+      "h3": {
+        "font": "Cormorant Garamond",
+        "weight": 600,
+        "size_mobile": "xl (1.25rem)",
+        "size_desktop": "2xl (1.5rem)",
+        "line_height": "snug (1.375)",
+        "letter_spacing": "0em",
+        "color": "text_primary (#12232E)"
+      },
+      "h4": {
+        "font": "Jost",
+        "weight": 500,
+        "size": "base–lg (1rem–1.125rem)",
+        "line_height": "normal (1.5)",
+        "letter_spacing": "0em",
+        "color": "text_secondary (#2C4A5A)"
+      },
+      "label_uppercase": {
+        "font": "Jost",
+        "weight": 500,
+        "size": "xs (0.75rem)",
+        "line_height": "normal (1.5)",
+        "letter_spacing": "widest (0.1em)",
+        "text_transform": "uppercase",
+        "color": "primary (#1E6A85) ou text_muted (#4E6B7A)",
+        "note": "Pour les étiquettes de catégorie, surtitres de section (ex. 'Nos services', 'Pourquoi nous')"
+      },
+      "body": {
+        "font": "Jost",
+        "weight": 400,
+        "size": "base (1rem)",
+        "line_height": "relaxed (1.625)",
+        "letter_spacing": "0em",
+        "color": "text_primary (#12232E)"
+      },
+      "body_secondary": {
+        "font": "Jost",
+        "weight": 400,
+        "size": "base (1rem)",
+        "line_height": "relaxed (1.625)",
+        "color": "text_secondary (#2C4A5A)"
+      },
+      "small": {
+        "font": "Jost",
+        "weight": 400,
+        "size": "sm (0.875rem)",
+        "line_height": "normal (1.5)",
+        "color": "text_muted (#4E6B7A)"
+      },
+      "nav_link": {
+        "font": "Jost",
+        "weight": 400,
+        "size": "sm–base (0.875rem–1rem)",
+        "letter_spacing": "0.01em",
+        "color": "text_secondary (#2C4A5A)"
+      },
+      "tagline_decorative": {
+        "font": "Dancing Script",
+        "weight": 400,
+        "size": "lg–xl (1.125rem–1.25rem)",
+        "line_height": "normal (1.5)",
+        "color": "accent (#4AB5C4) ou primary (#1E6A85)",
+        "note": "Usage extrêmement parcellaire — uniquement pour la tagline de marque ou une citation poétique lacustre. Jamais dans le corps de texte."
+      }
+    }
+  },
+
+  "spacing": {
+    "space-1":  { "value": "0.25rem",  "px": "4px" },
+    "space-2":  { "value": "0.5rem",   "px": "8px" },
+    "space-3":  { "value": "0.75rem",  "px": "12px" },
+    "space-4":  { "value": "1rem",     "px": "16px" },
+    "space-5":  { "value": "1.25rem",  "px": "20px" },
+    "space-6":  { "value": "1.5rem",   "px": "24px" },
+    "space-8":  { "value": "2rem",     "px": "32px" },
+    "space-10": { "value": "2.5rem",   "px": "40px" },
+    "space-12": { "value": "3rem",     "px": "48px" },
+    "space-16": { "value": "4rem",     "px": "64px" },
+    "space-20": { "value": "5rem",     "px": "80px" },
+    "space-24": { "value": "6rem",     "px": "96px" },
+    "note": "Grille base 4px. L'identité aérienne d'Alizé Fleurs exige des espacements généreux entre les sections — utiliser space-20 à space-24 pour les paddings de section, jamais moins de space-12."
+  },
+
+  "border_radius": {
+    "sm":   "4px",
+    "md":   "8px",
+    "lg":   "12px",
+    "xl":   "16px",
+    "2xl":  "24px",
+    "3xl":  "32px",
+    "full": "9999px",
+    "note": "Rayon lg (12px) pour les boutons CTA — évoque l'eau calme sans être trop circulaire. Rayon xl (16px) pour les cartes de service. Rayon full (9999px) pour les badges étoiles 5/5 et les tags de catégorie."
+  },
+
+  "shadows": {
+    "sm":      "0 1px 3px rgba(18, 35, 46, 0.07)",
+    "md":      "0 4px 12px rgba(18, 35, 46, 0.09)",
+    "lg":      "0 8px 24px rgba(18, 35, 46, 0.11)",
+    "xl":      "0 16px 48px rgba(18, 35, 46, 0.14)",
+    "primary": "0 4px 20px rgba(30, 106, 133, 0.28)",
+    "accent":  "0 4px 16px rgba(74, 181, 196, 0.30)",
+    "card":    "0 2px 16px rgba(18, 35, 46, 0.08)",
+    "inner":   "inset 0 2px 4px rgba(18, 35, 46, 0.06)",
+    "note": "Les ombres utilisent la teinte bleu nuit #12232E comme base de couleur, ce qui les intègre naturellement à la palette lacustre sans contrast artificiel gris-neutre. shadow-primary est la signature du bouton CTA au hover — teinte bleu Léman rayonnante."
+  },
+
+  "animation": {
+    "duration": {
+      "fast":   "150ms",
+      "normal": "250ms",
+      "slow":   "400ms",
+      "xslow":  "600ms"
+    },
+    "easing": {
+      "default":  "cubic-bezier(0.4, 0, 0.2, 1)",
+      "spring":   "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "ease-out": "cubic-bezier(0, 0, 0.2, 1)",
+      "ease-in":  "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    "scroll_reveal": {
+      "initial_transform": "translateY(20px)",
+      "initial_opacity": 0,
+      "final_transform": "translateY(0)",
+      "final_opacity": 1,
+      "duration": "400ms",
+      "easing": "cubic-bezier(0, 0, 0.2, 1)",
+      "stagger_delay": "100ms",
+      "note": "Fade-in léger + léger glissement vers le haut au scroll. Pas de parallaxe agressif. L'identité 'brise' autorise de très douces animations de flottement (float) sur les éléments SVG décoratifs uniquement."
+    },
+    "hover_card": {
+      "transform": "translateY(-2px)",
+      "duration": "250ms",
+      "shadow_transition": true
+    },
+    "float": {
+      "description": "Animation très douce pour les éléments SVG décoratifs (vague, pétale)",
+      "keyframes": "0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) }",
+      "duration": "3000ms",
+      "easing": "ease-in-out",
+      "iteration": "infinite"
+    }
+  },
+
+  "breakpoints": {
+    "sm":  "640px",
+    "md":  "768px",
+    "lg":  "1024px",
+    "xl":  "1280px",
+    "2xl": "1536px",
+    "container_content": "1200px",
+    "container_narrow":  "768px",
+    "container_wide":    "1400px"
+  },
+
+  "sections": {
+    "hero": {
+      "bg_placeholder_gradient": "linear-gradient(160deg, #1A3A4E 0%, #1E6A85 55%, #2A7B9E 100%)",
+      "bg_with_photo_overlay": "rgba(18, 35, 46, 0.42)",
+      "text_color": "#FFFFFF",
+      "min_height": "100vh",
+      "padding": "160px 0 80px",
+      "h1_color": "#FFFFFF",
+      "tagline_color": "rgba(255,255,255,0.9)",
+      "badge_bg": "rgba(255,255,255,0.95)",
+      "badge_text": "#12232E",
+      "badge_stars": "#CAB07E",
+      "badge_backdrop_filter": "blur(8px)",
+      "cta_primary_bg": "#1E6A85",
+      "cta_primary_text": "#FFFFFF",
+      "cta_secondary_border": "rgba(255,255,255,0.7)",
+      "cta_secondary_text": "#FFFFFF",
+      "note": "Photo hero en fond plein écran avec overlay sombre. Si pas de photo : utiliser le gradient placeholder. Badge 5/5 flottant en pilule blanche nacrée. Mobile : photo recadrée portrait, texte centré."
+    },
+    "reassurance": {
+      "bg": "#EDF5F9",
+      "border_top": "3px solid #4AB5C4",
+      "border_bottom": "1px solid #D4E4EC",
+      "icon_color": "#1E6A85",
+      "icon_bg": "rgba(30, 106, 133, 0.1)",
+      "text_color": "#12232E",
+      "secondary_text": "#2C4A5A",
+      "padding": "2.5rem 0",
+      "note": "4 piliers horizontaux : étoile 5/5, mains/fleur, vague/lac, pin géo. Fond bleu ciel pâle avec bordure turquoise supérieure — discret mais distinctif."
+    },
+    "about": {
+      "bg": "#F7F5F2",
+      "text_color": "#12232E",
+      "secondary_text": "#2C4A5A",
+      "image_position": "droite sur desktop, en dessous du texte sur mobile",
+      "padding": "6rem 0",
+      "texture": "Légère texture de lin blanc en filigrane (opacity 0.03-0.05) — évoque la légèreté, le vent, le tissu de voilier",
+      "pull_quote_color": "#1E6A85",
+      "pull_quote_border": "3px solid #4AB5C4"
+    },
+    "services": {
+      "bg": "#FFFFFF",
+      "grid": "2 colonnes mobile / 3 colonnes desktop",
+      "card_bg": "#F7F5F2",
+      "card_hover_bg": "#EDF5F9",
+      "card_border": "1px solid #EAF1F5",
+      "card_hover_border": "#D4E4EC",
+      "card_shadow": "0 2px 16px rgba(18,35,46,0.08)",
+      "card_hover_shadow": "0 8px 24px rgba(18,35,46,0.11)",
+      "icon_color": "#1E6A85",
+      "icon_bg": "#EDF5F9",
+      "icon_size": "48px",
+      "padding": "5rem 0"
+    },
+    "mariage": {
+      "bg": "#1A3A4E",
+      "text_color": "#FFFFFF",
+      "secondary_text": "rgba(255,255,255,0.85)",
+      "accent_color": "#4AB5C4",
+      "gold_accent": "#CAB07E",
+      "card_bg": "#1F4C63",
+      "card_border": "1px solid rgba(74,181,196,0.25)",
+      "cta_primary_bg": "#FFFFFF",
+      "cta_primary_text": "#1A3A4E",
+      "cta_secondary_border": "rgba(255,255,255,0.6)",
+      "cta_secondary_text": "#FFFFFF",
+      "divider_color": "rgba(74,181,196,0.4)",
+      "padding": "6rem 0",
+      "note": "Section à fort impact visuel. Fond bleu Léman nuit avec accents turquoise. Les textes en Cormorant Garamond Regular prennent un aspect particulièrement élégant sur fond sombre — vérifier la lisibilité en preview."
+    },
+    "deuil": {
+      "bg": "#F7F5F2",
+      "text_color": "#12232E",
+      "secondary_text": "#2C4A5A",
+      "icon_color": "#4E6B7A",
+      "icon_style": "trait très fin, feuille simple — aucun ornement lacustre",
+      "padding": "6rem 0",
+      "font_size_body": "0.9375rem",
+      "line_height": "1.75",
+      "note": "Section sobre et apaisante. Aucune couleur bleue vive, aucune animation décorative. Espacement généreux, typographie plus petite et aérée. Fond blanc nacré pur pour la pureté et le respect."
+    },
+    "gallery": {
+      "bg": "#FFFFFF",
+      "grid": "2 colonnes mobile / 3 tablette / 4 desktop",
+      "gap": "8px",
+      "item_radius": "8px",
+      "item_hover_shadow": "0 4px 16px rgba(18,35,46,0.15)",
+      "item_hover_transform": "scale(1.02)",
+      "filter_bar_bg": "#F7F5F2",
+      "filter_active_bg": "#1E6A85",
+      "filter_active_text": "#FFFFFF",
+      "filter_inactive_text": "#2C4A5A",
+      "padding": "5rem 0"
+    },
+    "testimonials": {
+      "bg": "#EDF5F9",
+      "card_bg": "#FFFFFF",
+      "card_border": "1px solid #EAF1F5",
+      "card_shadow": "0 2px 12px rgba(18,35,46,0.07)",
+      "badge_bg": "#1E6A85",
+      "badge_text": "#FFFFFF",
+      "stars_color": "#CAB07E",
+      "text_color": "#2C4A5A",
+      "quote_mark_color": "#D4E4EC",
+      "author_color": "#12232E",
+      "padding": "5rem 0"
+    },
+    "contact": {
+      "bg": "#F7F5F2",
+      "form_bg": "#FFFFFF",
+      "form_shadow": "0 4px 24px rgba(18,35,46,0.08)",
+      "form_radius": "16px",
+      "form_border": "1px solid #D4E4EC",
+      "map_radius": "12px",
+      "map_border": "1px solid #D4E4EC",
+      "text_color": "#12232E",
+      "padding": "5rem 0"
+    },
+    "faq": {
+      "bg": "#FFFFFF",
+      "item_border": "1px solid #EAF1F5",
+      "item_hover_bg": "#EDF5F9",
+      "question_color": "#12232E",
+      "answer_color": "#2C4A5A",
+      "icon_color": "#1E6A85",
+      "padding": "5rem 0",
+      "accordion_radius": "8px"
+    },
+    "footer": {
+      "bg": "#1A3A4E",
+      "text_color": "#FFFFFF",
+      "muted_text": "rgba(255,255,255,0.72)",
+      "link_color": "#4AB5C4",
+      "link_hover_color": "#9DD4C4",
+      "border_color": "rgba(255,255,255,0.12)",
+      "logo_color": "#FFFFFF",
+      "stars_color": "#CAB07E",
+      "padding": "4rem 0 2rem"
+    }
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "background": "#1E6A85",
+        "text": "#FFFFFF",
+        "hover_background": "#155570",
+        "hover_shadow": "0 4px 20px rgba(30, 106, 133, 0.28)",
+        "active_background": "#0F4255",
+        "radius": "12px",
+        "padding_sm": "0.5rem 1.25rem",
+        "padding_md": "0.75rem 1.75rem",
+        "padding_lg": "0.875rem 2rem",
+        "font": "Jost",
+        "weight": 500,
+        "size": "1rem",
+        "letter_spacing": "0.01em",
+        "transition": "background 150ms ease-out, box-shadow 250ms ease-out, transform 150ms ease-out",
+        "hover_transform": "translateY(-1px)",
+        "focus_ring": "0 0 0 3px rgba(30, 106, 133, 0.3)"
+      },
+      "secondary": {
+        "background": "transparent",
+        "border": "2px solid #1E6A85",
+        "text": "#1E6A85",
+        "hover_background": "#1E6A85",
+        "hover_text": "#FFFFFF",
+        "hover_border": "#1E6A85",
+        "radius": "12px",
+        "padding_md": "calc(0.75rem - 2px) 1.75rem",
+        "font": "Jost",
+        "weight": 500
+      },
+      "ghost": {
+        "background": "transparent",
+        "text": "#1E6A85",
+        "hover_background": "#EDF5F9",
+        "hover_text": "#155570",
+        "radius": "12px",
+        "padding_md": "0.75rem 1rem"
+      },
+      "night_outline": {
+        "description": "Bouton outline pour sections sur fond sombre (#1A3A4E)",
+        "background": "transparent",
+        "border": "2px solid rgba(255,255,255,0.65)",
+        "text": "#FFFFFF",
+        "hover_background": "rgba(255,255,255,0.12)",
+        "hover_border": "rgba(255,255,255,0.9)",
+        "radius": "12px",
+        "padding_md": "calc(0.75rem - 2px) 1.75rem"
+      },
+      "night_solid": {
+        "description": "Bouton blanc solide sur fond sombre — CTA principal en section Mariage",
+        "background": "#FFFFFF",
+        "text": "#1A3A4E",
+        "hover_background": "#F7F5F2",
+        "hover_shadow": "0 4px 20px rgba(18, 35, 46, 0.25)",
+        "radius": "12px",
+        "padding_md": "0.75rem 1.75rem",
+        "font": "Jost",
+        "weight": 500
+      },
+      "call": {
+        "description": "Bouton d'appel téléphonique — CTA le plus proéminent du site",
+        "background": "#1E6A85",
+        "text": "#FFFFFF",
+        "icon": "phone (outline thin)",
+        "radius": "12px",
+        "padding": "0.875rem 2rem",
+        "font_size": "1.0625rem",
+        "font_weight": 500,
+        "hover_background": "#155570",
+        "hover_shadow": "0 6px 24px rgba(30, 106, 133, 0.35)"
+      }
+    },
+
+    "badge": {
+      "stars_hero": {
+        "description": "Badge Google 5/5 flottant dans le hero et en tête de section avis",
+        "background": "rgba(255, 255, 255, 0.95)",
+        "backdrop_filter": "blur(8px)",
+        "border": "1px solid rgba(255, 255, 255, 0.6)",
+        "shadow": "0 4px 16px rgba(18, 35, 46, 0.15)",
+        "radius": "9999px",
+        "padding": "0.5rem 1.25rem",
+        "stars_color": "#CAB07E",
+        "text_color": "#12232E",
+        "font": "Jost",
+        "weight": 500,
+        "size": "0.875rem"
+      },
+      "stars_dark": {
+        "description": "Badge 5/5 sur fond sombre — header ou section nuit",
+        "background": "#1E6A85",
+        "text": "#FFFFFF",
+        "stars_color": "#CAB07E",
+        "radius": "9999px",
+        "padding": "0.375rem 1rem"
+      },
+      "category_tag": {
+        "background": "#EDF5F9",
+        "text": "#1E6A85",
+        "border": "1px solid #D4E4EC",
+        "radius": "9999px",
+        "padding": "0.25rem 0.875rem",
+        "font": "Jost",
+        "size": "0.75rem",
+        "weight": 500,
+        "letter_spacing": "0.05em",
+        "text_transform": "uppercase"
+      },
+      "label_section": {
+        "description": "Petit surtitre avant les H2 de section",
+        "background": "transparent",
+        "text": "#1E6A85",
+        "border_bottom": "2px solid #4AB5C4",
+        "padding_bottom": "0.25rem",
+        "font": "Jost",
+        "size": "0.75rem",
+        "weight": 500,
+        "letter_spacing": "0.1em",
+        "text_transform": "uppercase"
+      }
+    },
+
+    "card": {
+      "service": {
+        "background": "#FFFFFF",
+        "border": "1px solid #EAF1F5",
+        "shadow": "0 2px 16px rgba(18, 35, 46, 0.08)",
+        "hover_shadow": "0 8px 24px rgba(18, 35, 46, 0.11)",
+        "hover_border": "1px solid #D4E4EC",
+        "hover_bg": "#EDF5F9",
+        "radius": "16px",
+        "padding": "2rem 1.5rem",
+        "icon_bg": "#EDF5F9",
+        "icon_color": "#1E6A85",
+        "icon_size": "48px",
+        "icon_radius": "12px",
+        "title_font": "Cormorant Garamond",
+        "title_weight": 600,
+        "title_size": "1.25rem",
+        "title_color": "#12232E",
+        "body_font": "Jost",
+        "body_size": "0.9375rem",
+        "body_color": "#2C4A5A",
+        "hover_transform": "translateY(-2px)",
+        "transition": "box-shadow 250ms cubic-bezier(0.4,0,0.2,1), border-color 250ms cubic-bezier(0.4,0,0.2,1), transform 250ms cubic-bezier(0.4,0,0.2,1), background-color 250ms cubic-bezier(0.4,0,0.2,1)"
+      },
+      "testimonial": {
+        "background": "#FFFFFF",
+        "border": "1px solid #EAF1F5",
+        "shadow": "0 2px 12px rgba(18, 35, 46, 0.07)",
+        "radius": "16px",
+        "padding": "2rem",
+        "quote_mark_color": "#D4E4EC",
+        "quote_mark_size": "4rem",
+        "text_color": "#2C4A5A",
+        "author_color": "#12232E",
+        "author_weight": 500,
+        "note_fictive_color": "#926200"
+      },
+      "gallery_item": {
+        "radius": "8px",
+        "overflow": "hidden",
+        "shadow_default": "none",
+        "hover_shadow": "0 4px 16px rgba(18, 35, 46, 0.15)",
+        "hover_transform": "scale(1.015)",
+        "transition": "box-shadow 250ms cubic-bezier(0.4,0,0.2,1), transform 250ms cubic-bezier(0.4,0,0.2,1)"
+      }
+    },
+
+    "form": {
+      "input": {
+        "background": "#FFFFFF",
+        "border": "1.5px solid #D4E4EC",
+        "hover_border": "#9DD4C4",
+        "focus_border": "#1E6A85",
+        "focus_ring": "0 0 0 3px rgba(30, 106, 133, 0.15)",
+        "radius": "8px",
+        "padding": "0.75rem 1rem",
+        "font": "Jost",
+        "size": "1rem",
+        "color": "#12232E",
+        "placeholder_color": "#4E6B7A",
+        "transition": "border-color 150ms ease-out, box-shadow 150ms ease-out"
+      },
+      "label": {
+        "font": "Jost",
+        "weight": 500,
+        "size": "0.875rem",
+        "color": "#2C4A5A",
+        "margin_bottom": "0.375rem",
+        "required_color": "#C0392B"
+      },
+      "select": {
+        "background": "#FFFFFF url(\"data:image/svg+xml,...\") right 1rem center/20px no-repeat",
+        "border": "1.5px solid #D4E4EC",
+        "focus_border": "#1E6A85",
+        "focus_ring": "0 0 0 3px rgba(30, 106, 133, 0.15)",
+        "radius": "8px",
+        "padding": "0.75rem 2.5rem 0.75rem 1rem",
+        "appearance": "none"
+      },
+      "textarea": {
+        "background": "#FFFFFF",
+        "border": "1.5px solid #D4E4EC",
+        "focus_border": "#1E6A85",
+        "focus_ring": "0 0 0 3px rgba(30, 106, 133, 0.15)",
+        "radius": "8px",
+        "padding": "0.75rem 1rem",
+        "min_height": "128px",
+        "resize": "vertical"
+      },
+      "submit": {
+        "inherits": "button.primary",
+        "width": "100%",
+        "padding": "1rem 2rem",
+        "font_size": "1.0625rem",
+        "margin_top": "0.5rem"
+      },
+      "error_state": {
+        "border_color": "#C0392B",
+        "ring": "0 0 0 3px rgba(192, 57, 43, 0.15)",
+        "message_color": "#C0392B",
+        "message_size": "0.8125rem"
+      },
+      "success_state": {
+        "border_color": "#1A7A45",
+        "bg": "#E8F8EE",
+        "message_color": "#1A7A45"
+      }
+    },
+
+    "nav": {
+      "height": "72px",
+      "background_default": "rgba(247, 245, 242, 0.95)",
+      "background_scrolled": "rgba(247, 245, 242, 0.98)",
+      "backdrop_filter": "blur(12px)",
+      "border_bottom": "1px solid #EAF1F5",
+      "shadow_scrolled": "0 1px 12px rgba(18, 35, 46, 0.08)",
+      "logo_font": "Cormorant Garamond",
+      "logo_weight": 400,
+      "logo_size": "1.5rem",
+      "logo_color": "#1E6A85",
+      "logo_tagline_size": "0.6875rem",
+      "logo_tagline_color": "#4E6B7A",
+      "logo_tagline_letter_spacing": "0.08em",
+      "link_color": "#2C4A5A",
+      "link_hover_color": "#1E6A85",
+      "link_active_color": "#1E6A85",
+      "link_active_underline": "2px solid #4AB5C4",
+      "cta_bg": "#1E6A85",
+      "cta_text": "#FFFFFF",
+      "cta_hover_bg": "#155570",
+      "phone_color": "#1E6A85",
+      "phone_font_weight": 500,
+      "hamburger_color": "#12232E",
+      "mobile_menu_bg": "#F7F5F2",
+      "mobile_menu_shadow": "0 8px 24px rgba(18, 35, 46, 0.12)",
+      "z_index": 1000,
+      "transition": "box-shadow 250ms ease-out, background 250ms ease-out"
+    },
+
+    "mobile_cta_bar": {
+      "description": "Barre d'appel téléphonique flottante en bas d'écran sur mobile — visible en permanence sur les appareils < 768px",
+      "background": "#1E6A85",
+      "text": "#FFFFFF",
+      "height": "56px",
+      "padding": "0 1.5rem",
+      "font": "Jost",
+      "weight": 500,
+      "size": "1rem",
+      "letter_spacing": "0.01em",
+      "icon": "phone",
+      "position": "fixed",
+      "bottom": "0",
+      "left": "0",
+      "right": "0",
+      "z_index": 100,
+      "shadow": "0 -2px 12px rgba(18, 35, 46, 0.15)",
+      "body_padding_bottom_mobile": "56px",
+      "breakpoint_hide": "768px"
+    }
+  },
+
+  "css_custom_properties": ":root {\n  /* =========================================\n     DESIGN TOKENS — Alizé Fleurs\n     Le Bouveret, bord du Léman\n     Style : lacustre-lumineux | 2026-06-18\n  ========================================= */\n\n  /* ── Couleurs primaires — Bleu Léman ─── */\n  --color-primary:      #1E6A85; /* 6.1:1 sur blanc — WCAG AA */\n  --color-primary-dark: #155570; /* 7.8:1 sur blanc — hover/focus */\n  --color-primary-light:#2A7B9E; /* 4.8:1 — grand texte uniquement */\n  --color-primary-pale: #D6EBF4;\n\n  /* ── Accent — Turquoise lacustre ──────── */\n  --color-accent:       #4AB5C4; /* décoratif uniquement sur fond blanc */\n  --color-accent-dark:  #329BAA;\n  --color-accent-pale:  #B8E4EC;\n\n  /* ── Vert d'eau ──────────────────────── */\n  --color-water-green:      #9DD4C4;\n  --color-water-green-pale: #D4EEE9;\n\n  /* ── Sable doré lumineux ─────────────── */\n  --color-sand:       #CAB07E; /* 5.7:1 sur nuit — étoiles, accents */\n  --color-sand-light: #EDE0CC;\n  --color-sand-pale:  #F5EDD9;\n\n  /* ── Bleu nuit — sections sombres ────── */\n  --color-night:     #1A3A4E; /* 11.4:1 blanc dessus — WCAG AAA */\n  --color-night-mid: #1F4C63;\n\n  /* ── Surfaces & fonds ────────────────── */\n  --color-surface:      #FFFFFF;\n  --color-surface-alt:  #F7F5F2; /* blanc nacré — fond général du site */\n  --color-surface-blue: #EDF5F9;\n  --color-background:   #F7F5F2;\n\n  /* ── Textes ──────────────────────────── */\n  --color-text-primary:    #12232E; /* 16.1:1 sur blanc — WCAG AAA */\n  --color-text-secondary:  #2C4A5A; /*  9.4:1 sur blanc — WCAG AAA */\n  --color-text-muted:      #4E6B7A; /*  5.7:1 sur blanc — WCAG AA  */\n  --color-text-on-primary: #FFFFFF;\n  --color-text-on-dark:    #FFFFFF;\n  --color-text-on-dark-muted: rgba(255,255,255,0.72);\n\n  /* ── Bordures ────────────────────────── */\n  --color-border:       #D4E4EC;\n  --color-border-light: #EAF1F5;\n  --color-border-focus: #1E6A85;\n\n  /* ── Sections spécifiques ────────────── */\n  --section-mariage-bg:     #1A3A4E;\n  --section-mariage-accent: #4AB5C4;\n  --section-mariage-gold:   #CAB07E;\n  --section-deuil-bg:       #F7F5F2;\n  --footer-bg:              #1A3A4E;\n  --footer-link:            #4AB5C4;\n  --footer-border:          rgba(255,255,255,0.12);\n\n  /* ── Sémantique UI ───────────────────── */\n  --color-error:       #C0392B; /* 5.4:1 — WCAG AA */\n  --color-error-bg:    #FDECEA;\n  --color-success:     #1A7A45; /* 5.4:1 — WCAG AA */\n  --color-success-bg:  #E8F8EE;\n  --color-warning:     #926200; /* 5.3:1 — WCAG AA */\n  --color-warning-bg:  #FEF3C7;\n\n  /* ── Typographies ────────────────────── */\n  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;\n  --font-body:    'Jost', system-ui, -apple-system, sans-serif;\n  --font-accent:  'Dancing Script', cursive;\n\n  /* ── Échelle typographique ───────────── */\n  --text-xs:   0.75rem;   /*  12px */\n  --text-sm:   0.875rem;  /*  14px */\n  --text-base: 1rem;      /*  16px */\n  --text-lg:   1.125rem;  /*  18px */\n  --text-xl:   1.25rem;   /*  20px */\n  --text-2xl:  1.5rem;    /*  24px */\n  --text-3xl:  1.875rem;  /*  30px */\n  --text-4xl:  2.25rem;   /*  36px */\n  --text-5xl:  3rem;      /*  48px */\n  --text-6xl:  3.75rem;   /*  60px */\n\n  /* ── Graisses ────────────────────────── */\n  --font-light:    300;\n  --font-regular:  400;\n  --font-medium:   500;\n  --font-semibold: 600;\n\n  /* ── Hauteurs de ligne ───────────────── */\n  --leading-tight:   1.25;\n  --leading-snug:    1.375;\n  --leading-normal:  1.5;\n  --leading-relaxed: 1.625;\n  --leading-loose:   2.0;\n\n  /* ── Tracking ────────────────────────── */\n  --tracking-tight:   -0.025em;\n  --tracking-snug:    -0.01em;\n  --tracking-normal:  0em;\n  --tracking-wide:    0.025em;\n  --tracking-wider:   0.05em;\n  --tracking-widest:  0.1em;\n\n  /* ── Espacement (base 4px) ───────────── */\n  --space-1:  0.25rem;  /*  4px */\n  --space-2:  0.5rem;   /*  8px */\n  --space-3:  0.75rem;  /* 12px */\n  --space-4:  1rem;     /* 16px */\n  --space-5:  1.25rem;  /* 20px */\n  --space-6:  1.5rem;   /* 24px */\n  --space-8:  2rem;     /* 32px */\n  --space-10: 2.5rem;   /* 40px */\n  --space-12: 3rem;     /* 48px */\n  --space-16: 4rem;     /* 64px */\n  --space-20: 5rem;     /* 80px */\n  --space-24: 6rem;     /* 96px */\n\n  /* ── Border radius ───────────────────── */\n  --radius-sm:   4px;\n  --radius-md:   8px;\n  --radius-lg:   12px;   /* boutons CTA */\n  --radius-xl:   16px;   /* cartes de service */\n  --radius-2xl:  24px;\n  --radius-3xl:  32px;\n  --radius-full: 9999px; /* badges, tags, pilules */\n\n  /* ── Ombres ──────────────────────────── */\n  --shadow-sm:      0 1px 3px rgba(18,35,46,0.07);\n  --shadow-md:      0 4px 12px rgba(18,35,46,0.09);\n  --shadow-lg:      0 8px 24px rgba(18,35,46,0.11);\n  --shadow-xl:      0 16px 48px rgba(18,35,46,0.14);\n  --shadow-primary: 0 4px 20px rgba(30,106,133,0.28);\n  --shadow-accent:  0 4px 16px rgba(74,181,196,0.30);\n  --shadow-card:    0 2px 16px rgba(18,35,46,0.08);\n  --shadow-inner:   inset 0 2px 4px rgba(18,35,46,0.06);\n\n  /* ── Animations ──────────────────────── */\n  --duration-fast:   150ms;\n  --duration-normal: 250ms;\n  --duration-slow:   400ms;\n  --duration-xslow:  600ms;\n  --ease-default:    cubic-bezier(0.4,0,0.2,1);\n  --ease-spring:     cubic-bezier(0.34,1.56,0.64,1);\n  --ease-out:        cubic-bezier(0,0,0.2,1);\n\n  /* ── Focus ring ──────────────────────── */\n  --focus-ring: 0 0 0 3px rgba(30,106,133,0.25);\n\n  /* ── Composants ──────────────────────── */\n  --nav-height:         72px;\n  --btn-radius:         var(--radius-lg);\n  --input-radius:       var(--radius-md);\n  --card-radius:        var(--radius-xl);\n  --section-padding-y:  var(--space-20);\n  --container-max:      1200px;\n  --container-narrow:   768px;\n\n  /* ── Breakpoints (ref. media queries) ── */\n  /* sm:640px md:768px lg:1024px xl:1280px 2xl:1536px */\n}",
+
+  "image_assets": {
+    "_source": "Pexels",
+    "_note": "Images PLACEHOLDER libres de droits. À remplacer par les vraies photos du client avant mise en ligne. Conserver les crédits Pexels (afficher discrètement en figcaption ou tooltip) tant que les images Pexels sont utilisées.",
+    "hero": [
+      {
+        "url": "https://images.pexels.com/photos/5410134/pexels-photo-5410134.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/5410134/pexels-photo-5410134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Fleuriste dans sa boutique devant un réfrigérateur de compositions florales fraîches — Alizé Fleurs, Le Bouveret, bord du Léman",
+        "credit": "Amina Filkins",
+        "credit_url": "https://www.pexels.com/@amina-filkins"
+      }
+    ],
+    "about": [
+      {
+        "url": "https://images.pexels.com/photos/6178969/pexels-photo-6178969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/6178969/pexels-photo-6178969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Composition florale colorée dans un vase décoratif — création artisanale Alizé Fleurs, Le Bouveret",
+        "credit": "Alireza Khorshidi",
+        "credit_url": "https://www.pexels.com/@alireza-khorshidi-3490963"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.pexels.com/photos/36933430/pexels-photo-36933430.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/36933430/pexels-photo-36933430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Bouquet champêtre avec chrysanthèmes et herbes de pampa sur table en bois — composition artisanale Alizé Fleurs",
+        "credit": "Jonathan Borba",
+        "credit_url": "https://www.pexels.com/@jonathanborba"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6641383/pexels-photo-6641383.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/6641383/pexels-photo-6641383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Jeune femme tenant un bouquet coloré — fleurs fraîches composées à la main, Alizé Fleurs Le Bouveret",
+        "credit": "www.kaboompics.com",
+        "credit_url": "https://www.pexels.com/@karola-g"
+      },
+      {
+        "url": "https://images.pexels.com/photos/36871893/pexels-photo-36871893.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/36871893/pexels-photo-36871893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Arrangement floral élégant en noir et blanc avec marguerites et roses — création Alizé Fleurs",
+        "credit": "Peter Dyllong",
+        "credit_url": "https://www.pexels.com/@peter-dyllong-2158803154"
+      },
+      {
+        "url": "https://images.pexels.com/photos/33410847/pexels-photo-33410847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/33410847/pexels-photo-33410847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Bouquet d'oeillets roses et eucalyptus dans un vase rose sur table en bois — Alizé Fleurs, Port-Valais",
+        "credit": "Olga Shiryaeva",
+        "credit_url": "https://www.pexels.com/@olga-shiryaeva-465903588"
+      },
+      {
+        "url": "https://images.pexels.com/photos/28978613/pexels-photo-28978613.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/28978613/pexels-photo-28978613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Centrepiece floral avec roses rouges et fleurs jaunes dans un vase — composition événementielle Alizé Fleurs",
+        "credit": "Andreas Schnabl",
+        "credit_url": "https://www.pexels.com/@andreas-schnabl-1775843"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5976385/pexels-photo-5976385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/5976385/pexels-photo-5976385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Gros plan d'un bouquet coloré avec roses, oeillets et chrysanthèmes — fleurs fraîches Alizé Fleurs",
+        "credit": "Eva Bronzini",
+        "credit_url": "https://www.pexels.com/@eva-bronzini"
+      }
+    ],
+    "mariage": [
+      {
+        "url": "https://images.pexels.com/photos/13882793/pexels-photo-13882793.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/13882793/pexels-photo-13882793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Mariée tenant son bouquet floral lors d'une cérémonie — fleurs de mariage Alizé Fleurs, bord du Léman",
+        "credit": "amine photographe",
+        "credit_url": "https://www.pexels.com/@amine-photographe-291182746"
+      },
+      {
+        "url": "https://images.pexels.com/photos/14354372/pexels-photo-14354372.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/14354372/pexels-photo-14354372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Couple de mariés heureux en extérieur le jour de leur mariage — décoration florale Alizé Fleurs, Chablais",
+        "credit": "amine photographe",
+        "credit_url": "https://www.pexels.com/@amine-photographe-291182746"
+      },
+      {
+        "url": "https://images.pexels.com/photos/8471651/pexels-photo-8471651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/8471651/pexels-photo-8471651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Bouquets de fleurs colorées dans des vases en verre — decoration de table mariage Alizé Fleurs",
+        "credit": "Cup of Couple",
+        "credit_url": "https://www.pexels.com/@cup-of-couple"
+      },
+      {
+        "url": "https://images.pexels.com/photos/9342923/pexels-photo-9342923.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/9342923/pexels-photo-9342923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Deux bouquets de roses avec gypsophile dans une boîte en bois — arrangements mariage Alizé Fleurs Le Bouveret",
+        "credit": "Rene Terp",
+        "credit_url": "https://www.pexels.com/@reneterp"
+      }
+    ],
+    "deuil": [
+      {
+        "url": "https://images.pexels.com/photos/6109239/pexels-photo-6109239.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/6109239/pexels-photo-6109239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Chrysanthème blanc sur fond blanc — composition florale de deuil sobre et digne, Alizé Fleurs Port-Valais",
+        "credit": "Polina Kovaleva",
+        "credit_url": "https://www.pexels.com/@polina-kovaleva"
+      },
+      {
+        "url": "https://images.pexels.com/photos/36780293/pexels-photo-36780293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/36780293/pexels-photo-36780293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Bouquet élégant de roses blanches et chrysanthèmes avec feuillage vert — gerbe funéraire Alizé Fleurs",
+        "credit": "Joolsmagools",
+        "credit_url": "https://www.pexels.com/@joolsmagools"
+      }
+    ],
+    "plantes": [
+      {
+        "url": "https://images.pexels.com/photos/25284309/pexels-photo-25284309.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/25284309/pexels-photo-25284309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Orchidées Phalaenopsis roses en fleurs — plantes et cadeaux fleuris Alizé Fleurs Le Bouveret",
+        "credit": "Aleksey Zabuga",
+        "credit_url": "https://www.pexels.com/@aleksey-zabuga-1330900654"
+      },
+      {
+        "url": "https://images.pexels.com/photos/543747/pexels-photo-543747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/543747/pexels-photo-543747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Orchidées roses en gros plan — sélection de plantes Alizé Fleurs, Port-Valais Valais Suisse",
+        "credit": "Billel Moula",
+        "credit_url": "https://www.pexels.com/@billelmoula"
+      },
+      {
+        "url": "https://images.pexels.com/photos/15413530/pexels-photo-15413530.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "url_large2x": "https://images.pexels.com/photos/15413530/pexels-photo-15413530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Orchidées violettes en fleurs dans un jardin lumineux — plantes d'intérieur Alizé Fleurs",
+        "credit": "Cyrill",
+        "credit_url": "https://www.pexels.com/@realcereal"
+      }
+    ]
+  }
+}

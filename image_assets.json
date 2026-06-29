@@ -1,0 +1,206 @@
+{
+  "_source": "Pexels (https://www.pexels.com)",
+  "_note": "Images PLACEHOLDER libres de droits. À remplacer par les vraies photos du client avant mise en ligne. Conserver le crédit Pexels tant que les images Pexels sont affichées.",
+  "slots": {
+    "hero": {
+      "query": "fleuriste boutique bouquet",
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/5410134/pexels-photo-5410134.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/5410134/pexels-photo-5410134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Crop faceless female florist standing near fridge with various flowers while working in floral shop",
+          "width": 6000,
+          "height": 4000,
+          "credit": "Amina Filkins",
+          "credit_url": "https://www.pexels.com/@amina-filkins",
+          "pexels_url": "https://www.pexels.com/photo/crop-woman-near-fridge-with-flowers-5410134/"
+        }
+      ]
+    },
+    "about": {
+      "query": "fleuriste atelier composition",
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/6178969/pexels-photo-6178969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/6178969/pexels-photo-6178969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A colorful floral arrangement featuring sunflowers and autumn foliage in a decorated vase.",
+          "width": 6000,
+          "height": 4000,
+          "credit": "Alireza Khorshidi",
+          "credit_url": "https://www.pexels.com/@alireza-khorshidi-3490963",
+          "pexels_url": "https://www.pexels.com/photo/person-holding-a-round-vase-with-assorted-flowers-6178969/"
+        }
+      ]
+    },
+    "gallery": {
+      "query": "bouquet fleurs composition",
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/36933430/pexels-photo-36933430.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/36933430/pexels-photo-36933430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Charming floral bouquet featuring chrysanthemum and pampas grass on a wooden table. Perfect for decor.",
+          "width": 6048,
+          "height": 4024,
+          "credit": "Jonathan Borba",
+          "credit_url": "https://www.pexels.com/@jonathanborba",
+          "pexels_url": "https://www.pexels.com/photo/elegant-floral-arrangement-on-round-wooden-table-36933430/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/6641383/pexels-photo-6641383.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/6641383/pexels-photo-6641383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A woman with long hair holding a colorful bouquet, captured from behind indoors.",
+          "width": 6567,
+          "height": 4378,
+          "credit": "www.kaboompics.com",
+          "credit_url": "https://www.pexels.com/@karola-g",
+          "pexels_url": "https://www.pexels.com/photo/a-woman-with-a-bouquet-of-flowers-6641383/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/36871893/pexels-photo-36871893.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/36871893/pexels-photo-36871893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A stunning black and white arrangement of daisies, roses, and other flowers.",
+          "width": 5184,
+          "height": 3456,
+          "credit": "Peter Dyllong",
+          "credit_url": "https://www.pexels.com/@peter-dyllong-2158803154",
+          "pexels_url": "https://www.pexels.com/photo/black-and-white-floral-composition-with-various-blooms-36871893/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/33410847/pexels-photo-33410847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/33410847/pexels-photo-33410847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Beautiful floral arrangement with pink carnations and eucalyptus in a pink vase on wood table.",
+          "width": 6720,
+          "height": 4480,
+          "credit": "Olga Shiryaeva",
+          "credit_url": "https://www.pexels.com/@olga-shiryaeva-465903588",
+          "pexels_url": "https://www.pexels.com/photo/elegant-floral-arrangement-in-pink-vase-on-wooden-table-33410847/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/28978613/pexels-photo-28978613.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/28978613/pexels-photo-28978613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A vibrant floral arrangement with red roses and yellow blooms in a vase.",
+          "width": 6240,
+          "height": 4160,
+          "credit": "Andreas Schnabl",
+          "credit_url": "https://www.pexels.com/@andreas-schnabl-1775843",
+          "pexels_url": "https://www.pexels.com/photo/elegant-red-and-yellow-floral-centerpiece-arrangement-28978613/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/5976385/pexels-photo-5976385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/5976385/pexels-photo-5976385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A close-up of a colorful flower bouquet featuring roses, carnations, and chrysanthemums.",
+          "width": 5568,
+          "height": 3712,
+          "credit": "Eva Bronzini",
+          "credit_url": "https://www.pexels.com/@eva-bronzini",
+          "pexels_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-flower-arrangement-5976385/"
+        }
+      ]
+    },
+    "mariage": {
+      "query": "bouquet mariee decoration mariage",
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/13882793/pexels-photo-13882793.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/13882793/pexels-photo-13882793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Bride with henna-decorated hand holding a floral bouquet in Paris.",
+          "width": 6000,
+          "height": 4000,
+          "credit": "amine photographe",
+          "credit_url": "https://www.pexels.com/@amine-photographe-291182746",
+          "pexels_url": "https://www.pexels.com/photo/wedding-couple-13882793/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/14354372/pexels-photo-14354372.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/14354372/pexels-photo-14354372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A joyful couple posing outdoors on their wedding day in Paris, surrounded by nature and friends.",
+          "width": 6000,
+          "height": 4000,
+          "credit": "amine photographe",
+          "credit_url": "https://www.pexels.com/@amine-photographe-291182746",
+          "pexels_url": "https://www.pexels.com/photo/wedding-14354372/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/8471651/pexels-photo-8471651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/8471651/pexels-photo-8471651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Colorful flower bouquets in glass vases, perfect for decor and celebrations.",
+          "width": 5616,
+          "height": 3744,
+          "credit": "Cup of  Couple",
+          "credit_url": "https://www.pexels.com/@cup-of-couple",
+          "pexels_url": "https://www.pexels.com/photo/flowers-bouquets-in-vases-8471651/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/9342923/pexels-photo-9342923.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/9342923/pexels-photo-9342923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Two beautifully arranged rose bouquets with delicate baby's breath in a wooden box.",
+          "width": 6000,
+          "height": 4000,
+          "credit": "Rene Terp",
+          "credit_url": "https://www.pexels.com/@reneterp",
+          "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-bouquets-of-roses-9342923/"
+        }
+      ]
+    },
+    "deuil": {
+      "query": "composition florale deuil blanche",
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/6109239/pexels-photo-6109239.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/6109239/pexels-photo-6109239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Close-up of a pristine white chrysanthemum surrounded by scattered petals, creating a serene floral composition.",
+          "width": 4592,
+          "height": 3064,
+          "credit": "Polina ⠀",
+          "credit_url": "https://www.pexels.com/@polina-kovaleva",
+          "pexels_url": "https://www.pexels.com/photo/white-flower-on-white-surface-6109239/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/36780293/pexels-photo-36780293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/36780293/pexels-photo-36780293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Close-up of a lush bouquet featuring white roses and different chrysanthemums with lush green foliage.",
+          "width": 4032,
+          "height": 3024,
+          "credit": "Joolsmagools  ®️",
+          "credit_url": "https://www.pexels.com/@joolsmagools",
+          "pexels_url": "https://www.pexels.com/photo/elegant-floral-arrangement-with-white-roses-and-chrysanthemums-36780293/"
+        }
+      ]
+    },
+    "plantes": {
+      "query": "plante interieur orchidee",
+      "images": [
+        {
+          "url": "https://images.pexels.com/photos/25284309/pexels-photo-25284309.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/25284309/pexels-photo-25284309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Beautiful display of pink Phalaenopsis orchids in full bloom, highlighting their delicate speckled petals and vibrant colors.",
+          "width": 6240,
+          "height": 4160,
+          "credit": "Aleksey Zabuga",
+          "credit_url": "https://www.pexels.com/@aleksey-zabuga-1330900654",
+          "pexels_url": "https://www.pexels.com/photo/petals-of-pink-flowers-25284309/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/543747/pexels-photo-543747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/543747/pexels-photo-543747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "A beautiful close-up of pink orchids in bloom, showcasing nature's elegance.",
+          "width": 4648,
+          "height": 3103,
+          "credit": "Billel Moula",
+          "credit_url": "https://www.pexels.com/@billelmoula",
+          "pexels_url": "https://www.pexels.com/photo/purple-orchids-543747/"
+        },
+        {
+          "url": "https://images.pexels.com/photos/15413530/pexels-photo-15413530.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "url_large2x": "https://images.pexels.com/photos/15413530/pexels-photo-15413530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "alt": "Close-up of vibrant purple orchids blooming in a lush garden setting.",
+          "width": 6000,
+          "height": 4000,
+          "credit": "Cyrill",
+          "credit_url": "https://www.pexels.com/@realcereal",
+          "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-a-purple-flower-15413530/"
+        }
+      ]
+    }
+  }
+}
